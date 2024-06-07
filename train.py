@@ -46,15 +46,17 @@ def evaluate(model, data_test, data_test_dec, vocab, criterion, one_hot_flag, de
         
             # Forward pass
             predictions = model.forward(input_seq_enc, masked_sequence_dec).squeeze(0) #masked_sequence[masked_position])
-            target_tokens = [input_seq_dec[l][positions[l]] for l in range(positions.shape[0])] #input_seq[masked_position]
-            target_tokens = torch.tensor([vocab[int(token)] for token in target_tokens], dtype=torch.long)
+            target_tokens = [input_seq_dec[l][positions[l]] for l in range(positions.shape[0])]
+            target_tokens = torch.stack(target_tokens).flatten()
+            target_tokens = torch.tensor([vocab[int(token)] for token in target_tokens], dtype=torch.long).reshape(data_dec.shape[0], -1)
             #outputs = model.forward(input_seq_enc, masked_sequence_dec).squeeze(0)
             #target_tokens = input_seq_dec[positions] #target_token = input_seq[position]
             #target_tokens = torch.tensor([vocab[int(token)] for token in target_tokens], dtype=torch.long)
 
         # Compute loss
-        output = predictions[torch.arange(predictions.size(0)), positions.squeeze(-1), :]
-        loss = criterion(output, target_tokens)
+        batch_indices = torch.arange(predictions.size(0)).unsqueeze(-1).expand(-1, positions.shape[1])
+        output = predictions[batch_indices, positions, :].reshape(-1, predictions.shape[-1])
+        loss = criterion(output, target_tokens.flatten())
         epoch_loss += loss.item()
     return epoch_loss / len(data_test)
 
@@ -92,15 +94,16 @@ def train(model, data_train, data_train_dec, data_test, data_test_dec, vocab, op
                 input_seq_enc = torch.tensor(input_seq_enc, dtype=torch.long)
                 # mask tokens in decoder
                 masked_sequence_dec, positions = mask_random_spins_batch(input_seq_dec, vocab, mask_token=2, one_hot_flag=False)
-
                 # Forward pass
                 predictions = model.forward(input_seq_enc, masked_sequence_dec).squeeze(0) #masked_sequence[masked_position])
                 target_tokens = [input_seq_dec[l][positions[l]] for l in range(positions.shape[0])] #input_seq[masked_position]
-                target_tokens = torch.tensor([vocab[int(token)] for token in target_tokens], dtype=torch.long)
+                target_tokens = torch.stack(target_tokens).flatten()
+                target_tokens = torch.tensor([vocab[int(token)] for token in target_tokens], dtype=torch.long).reshape(data_dec.shape[0], -1)
             
             # Compute loss
-            output = predictions[torch.arange(predictions.size(0)), positions.squeeze(-1), :]
-            loss = criterion(output, target_tokens)
+            batch_indices = torch.arange(predictions.size(0)).unsqueeze(-1).expand(-1, positions.shape[1])
+            output = predictions[batch_indices, positions, :].reshape(-1, predictions.shape[-1])
+            loss = criterion(output, target_tokens.flatten())
             epoch_loss += loss.item()
 
             store_cross_attn_weights.append(model.decoder_layer.cross_attn_weights)
@@ -161,15 +164,17 @@ def evaluate_ablated(new_model, data_test_dec, vocab, criterion, one_hot_flag, d
             masked_sequence_dec, positions = mask_random_spins_batch(input_seq_dec, vocab, mask_token=2)
             # Forward pass
             predictions = new_model.forward(masked_sequence_dec) #masked_sequence[masked_position])
-            target_tokens = [input_seq_dec[l][positions[l]] for l in range(positions.shape[0])] #input_seq[masked_position]
-            target_tokens = torch.tensor([vocab[int(token)] for token in target_tokens], dtype=torch.long)
+            target_tokens = [input_seq_dec[l][positions[l]] for l in range(positions.shape[0])]
+            target_tokens = torch.stack(target_tokens).flatten()
+            target_tokens = torch.tensor([vocab[int(token)] for token in target_tokens], dtype=torch.long).reshape(data.shape[0], -1)
             #outputs = new_model.forward(masked_sequence_dec)[0].squeeze(0)
             #target_tokens = input_seq_dec[positions] #target_token = input_seq[position]
             #target_tokens = torch.tensor([vocab[int(token)] for token in target_tokens], dtype=torch.long)
 
         # Compute loss
-        output = predictions[torch.arange(predictions.size(0)), positions.squeeze(-1), :]
-        loss = criterion(output, target_tokens)
+        batch_indices = torch.arange(predictions.size(0)).unsqueeze(-1).expand(-1, positions.shape[1])
+        output = predictions[batch_indices, positions, :].reshape(-1, predictions.shape[-1])
+        loss = criterion(output, target_tokens.flatten())
         epoch_loss += loss.item()
     return epoch_loss / len(data_test_dec)
 
@@ -212,12 +217,14 @@ def train_ablated(model, new_model, data_train, data_train_dec, data_test, data_
                 #target_tokens = input_seq_dec[positions] #input_seq[masked_position]
                 #target_tokens = torch.tensor([vocab[int(token)] for token in target_tokens], dtype=torch.long)
                 predictions = model.forward(input_seq_enc, masked_sequence_dec) 
-
                 target_tokens = [input_seq_dec[l][positions[l]] for l in range(positions.shape[0])] #input_seq[masked_position]
-                target_tokens = torch.tensor([vocab[int(token)] for token in target_tokens], dtype=torch.long)
+                target_tokens = torch.stack(target_tokens).flatten()
+                target_tokens = torch.tensor([vocab[int(token)] for token in target_tokens], dtype=torch.long).reshape(data_dec.shape[0], -1)
+            
             # Compute loss
-            output = predictions[torch.arange(predictions.size(0)), positions.squeeze(-1), :]
-            loss = criterion(output, target_tokens)
+            batch_indices = torch.arange(predictions.size(0)).unsqueeze(-1).expand(-1, positions.shape[1])
+            output = predictions[batch_indices, positions, :].reshape(-1, predictions.shape[-1])
+            loss = criterion(output, target_tokens.flatten())
             epoch_loss += loss.item()
             
             # Zero gradients, perform a backward pass, and update the weights.

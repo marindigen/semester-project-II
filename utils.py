@@ -9,6 +9,7 @@ import tqdm
 import random
 import torch.nn.functional as F
 from torch.utils.data import DataLoader, Dataset
+import matplotlib.pyplot as plt
 
 ##################################################### Data Loader ###################################################
 class NumpyDataset(Dataset):
@@ -125,7 +126,7 @@ def one_hot_encoding(seq, vocab):
             one_hot[i, vocab[spin]] = 1
     return one_hot
 
-def mask_random_spins_batch(sequence_batch, vocab, pos=1, mask_token=2, one_hot_flag=False):
+def mask_random_spins_batch(sequence_batch, vocab, pos=5, mask_token=2, one_hot_flag=False):
     """
     Mask random spins in a batch of sequences of protein spins.
 
@@ -188,40 +189,25 @@ def mask_random_spins(sequence, vocab, pos=5, mask_token=2, one_hot_flag=False):
     else:
         return torch.tensor(masked_sequence, dtype=torch.long), torch.tensor(mask_positions, dtype=torch.long)
 
-def extract_target_tokens(input_one_hot, positions):
+##################################################### Plotting ###################################################
+
+def generate_heatmap(weight_matrix):
     """
-    Extract target tokens from one-hot encoded batch based on masked positions.
-
-    Parameters:
-    - input_one_hot (torch.Tensor): One-hot encoded input batch of shape (32, 200, 3).
-    - positions (torch.Tensor): Tensor of masked positions for each sequence of shape (32) or (32, num_positions).
-
-    Returns:
-    - target_tokens (torch.Tensor): Tensor of target tokens of shape (32) or (32, num_positions).
-    """
-    batch_size, seq_length, num_features = input_one_hot.shape
-
-    def get_token(input_one_hot, i, pos):
-        token_tensor = torch.where(input_one_hot[i, pos] == 1)[0]
-        print("token tensor:", token_tensor)
-        if len(token_tensor) > 0:
-            return token_tensor.item()
-        else:
-            return -1
+    Generates a heatmap from a given weight matrix.
     
-    # Check if positions is a single dimension or two dimensions
-    if positions.dim() == 1:  # Single masked position per sequence
-        target_tokens = [get_token(input_one_hot, i, positions[i]) for i in range(batch_size)]
-        target_tokens = torch.tensor(target_tokens, dtype=torch.long)
-    elif positions.dim() == 2:  # Multiple masked positions per sequence
-        target_tokens = []
-        for i in range(batch_size):
-            tokens = [get_token(input_one_hot, i, pos) for pos in positions[i]]
-            target_tokens.append(tokens)
-        target_tokens = torch.tensor(target_tokens, dtype=torch.long)
-    else:
-        raise ValueError("positions tensor must be either 1D or 2D")
-
-    return target_tokens
-
-
+    Parameters:
+    weight_matrix (numpy.ndarray): A 2D numpy array of shape (200, 200) representing the weights.
+    
+    Returns:
+    None
+    """
+    if weight_matrix.shape != (200, 200):
+        raise ValueError("The weight matrix must be of shape (200, 200)")
+    
+    plt.figure(figsize=(10, 8))
+    plt.imshow(weight_matrix, cmap='viridis', aspect='auto')
+    plt.colorbar(label='Weight Value')
+    plt.title('Weight Matrix Heatmap')
+    plt.xlabel('Column Index')
+    plt.ylabel('Row Index')
+    plt.show()

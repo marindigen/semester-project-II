@@ -1,0 +1,319 @@
+2024-06-07 17:31:37,631 INFO    StreamThr :79447 [internal.py:wandb_internal():85] W&B internal server running at pid: 79447, started at: 2024-06-07 17:31:37.630522
+2024-06-07 17:31:37,632 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: status
+2024-06-07 17:31:37,635 INFO    WriterThread:79447 [datastore.py:open_for_write():87] open: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/run-uprkbiwh.wandb
+2024-06-07 17:31:37,635 DEBUG   SenderThread:79447 [sender.py:send():378] send: header
+2024-06-07 17:31:37,657 DEBUG   SenderThread:79447 [sender.py:send():378] send: run
+2024-06-07 17:31:38,056 INFO    SenderThread:79447 [dir_watcher.py:__init__():211] watching files in: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files
+2024-06-07 17:31:38,056 INFO    SenderThread:79447 [sender.py:_start_run_threads():1123] run started: uprkbiwh with start time 1717774297.631461
+2024-06-07 17:31:38,061 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: check_version
+2024-06-07 17:31:38,061 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: check_version
+2024-06-07 17:31:38,140 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: run_start
+2024-06-07 17:31:38,148 DEBUG   HandlerThread:79447 [system_info.py:__init__():26] System info init
+2024-06-07 17:31:38,148 DEBUG   HandlerThread:79447 [system_info.py:__init__():41] System info init done
+2024-06-07 17:31:38,148 INFO    HandlerThread:79447 [system_monitor.py:start():194] Starting system monitor
+2024-06-07 17:31:38,148 INFO    SystemMonitor:79447 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-07 17:31:38,148 INFO    HandlerThread:79447 [system_monitor.py:probe():214] Collecting system info
+2024-06-07 17:31:38,150 INFO    SystemMonitor:79447 [interfaces.py:start():188] Started cpu monitoring
+2024-06-07 17:31:38,153 INFO    SystemMonitor:79447 [interfaces.py:start():188] Started disk monitoring
+2024-06-07 17:31:38,155 INFO    SystemMonitor:79447 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-07 17:31:38,156 INFO    SystemMonitor:79447 [interfaces.py:start():188] Started memory monitoring
+2024-06-07 17:31:38,156 INFO    SystemMonitor:79447 [interfaces.py:start():188] Started network monitoring
+2024-06-07 17:31:38,465 DEBUG   HandlerThread:79447 [system_info.py:probe():150] Probing system
+2024-06-07 17:31:38,468 DEBUG   HandlerThread:79447 [system_info.py:_probe_git():135] Probing git
+2024-06-07 17:31:38,480 DEBUG   HandlerThread:79447 [system_info.py:_probe_git():143] Probing git done
+2024-06-07 17:31:38,481 DEBUG   HandlerThread:79447 [system_info.py:probe():198] Probing system done
+2024-06-07 17:31:38,481 DEBUG   HandlerThread:79447 [system_monitor.py:probe():223] {'os': 'macOS-14.4.1-arm64-arm-64bit', 'python': '3.12.3', 'heartbeatAt': '2024-06-07T15:31:38.465996', 'startedAt': '2024-06-07T15:31:37.624670', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'https://github.com/marindigen/semester-project.git', 'commit': '93d84fb97ace2783134c4bb5a2248854d5305e1a'}, 'email': 'mariia.iuffa@gmail.com', 'root': '/Users/mariayuffa/semester-project-1', 'host': 'eduroam-269-1-061.epfl.ch', 'username': 'mariayuffa', 'executable': '/Users/mariayuffa/semester-project-1/.venv/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'cpu_freq': {'current': 3504, 'min': 702, 'max': 3504}, 'cpu_freq_per_core': [{'current': 3504, 'min': 702, 'max': 3504}], 'disk': {'/': {'total': 460.4317207336426, 'used': 12.54928970336914}}, 'gpuapple': {'type': 'Apple M2 Pro', 'vendor': 'sppci_vendor_Apple'}, 'memory': {'total': 16.0}}
+2024-06-07 17:31:38,481 INFO    HandlerThread:79447 [system_monitor.py:probe():224] Finished collecting system info
+2024-06-07 17:31:38,481 INFO    HandlerThread:79447 [system_monitor.py:probe():227] Publishing system info
+2024-06-07 17:31:38,481 INFO    HandlerThread:79447 [system_monitor.py:probe():229] Finished publishing system info
+2024-06-07 17:31:38,485 DEBUG   SenderThread:79447 [sender.py:send():378] send: files
+2024-06-07 17:31:38,485 INFO    SenderThread:79447 [sender.py:_save_file():1389] saving file wandb-metadata.json with policy now
+2024-06-07 17:31:38,529 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: python_packages
+2024-06-07 17:31:38,530 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: python_packages
+2024-06-07 17:31:38,531 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 17:31:38,531 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 17:31:38,533 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: pause
+2024-06-07 17:31:38,533 INFO    HandlerThread:79447 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-07 17:31:38,533 INFO    HandlerThread:79447 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-07 17:31:38,533 INFO    HandlerThread:79447 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-07 17:31:38,533 DEBUG   SystemMonitor:79447 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-07 17:31:38,533 INFO    HandlerThread:79447 [interfaces.py:finish():200] Joined disk monitor
+2024-06-07 17:31:38,533 DEBUG   SystemMonitor:79447 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-07 17:31:38,533 INFO    HandlerThread:79447 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-07 17:31:38,533 DEBUG   SystemMonitor:79447 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-07 17:31:38,533 INFO    HandlerThread:79447 [interfaces.py:finish():200] Joined memory monitor
+2024-06-07 17:31:38,534 INFO    HandlerThread:79447 [interfaces.py:finish():200] Joined network monitor
+2024-06-07 17:31:38,537 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: resume
+2024-06-07 17:31:38,537 INFO    HandlerThread:79447 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-07 17:31:38,537 INFO    HandlerThread:79447 [system_monitor.py:start():194] Starting system monitor
+2024-06-07 17:31:38,537 INFO    SystemMonitor:79447 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-07 17:31:38,537 INFO    SystemMonitor:79447 [interfaces.py:start():188] Started cpu monitoring
+2024-06-07 17:31:38,537 INFO    SystemMonitor:79447 [interfaces.py:start():188] Started disk monitoring
+2024-06-07 17:31:38,540 INFO    SystemMonitor:79447 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-07 17:31:38,541 INFO    SystemMonitor:79447 [interfaces.py:start():188] Started memory monitoring
+2024-06-07 17:31:38,542 INFO    SystemMonitor:79447 [interfaces.py:start():188] Started network monitoring
+2024-06-07 17:31:38,747 DEBUG   SenderThread:79447 [sender.py:send():378] send: telemetry
+2024-06-07 17:31:38,748 DEBUG   SenderThread:79447 [sender.py:send():378] send: telemetry
+2024-06-07 17:31:38,748 DEBUG   SenderThread:79447 [sender.py:send():378] send: stats
+2024-06-07 17:31:39,060 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/requirements.txt
+2024-06-07 17:31:39,061 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/wandb-metadata.json
+2024-06-07 17:31:39,061 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:31:39,107 INFO    wandb-upload_0:79447 [upload_job.py:push():130] Uploaded file /var/folders/mg/44g5ch495hdc8x4_5mq3dsdm0000gn/T/tmp4yw3l91nwandb/sbadzuwn-wandb-metadata.json
+2024-06-07 17:31:41,070 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:31:42,699 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 17:31:43,080 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:31:43,115 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 17:31:43,116 DEBUG   SenderThread:79447 [sender.py:send():378] send: history
+2024-06-07 17:31:43,116 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 17:31:43,116 INFO    SenderThread:79447 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 17:31:44,086 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/wandb-summary.json
+2024-06-07 17:31:45,091 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:31:47,025 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 17:31:47,025 DEBUG   SenderThread:79447 [sender.py:send():378] send: history
+2024-06-07 17:31:47,025 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 17:31:47,026 INFO    SenderThread:79447 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 17:31:47,102 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/wandb-summary.json
+2024-06-07 17:31:47,102 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:31:47,722 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 17:31:49,112 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:31:50,895 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 17:31:50,896 DEBUG   SenderThread:79447 [sender.py:send():378] send: history
+2024-06-07 17:31:50,896 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 17:31:50,896 INFO    SenderThread:79447 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 17:31:51,122 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/wandb-summary.json
+2024-06-07 17:31:51,122 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:31:52,748 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 17:31:53,133 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:31:53,535 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 17:31:53,535 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 17:31:54,814 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 17:31:54,815 DEBUG   SenderThread:79447 [sender.py:send():378] send: history
+2024-06-07 17:31:54,815 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 17:31:54,815 INFO    SenderThread:79447 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 17:31:55,143 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/wandb-summary.json
+2024-06-07 17:31:55,143 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:31:57,154 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:31:57,896 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 17:31:58,950 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 17:31:58,950 DEBUG   SenderThread:79447 [sender.py:send():378] send: history
+2024-06-07 17:31:58,950 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 17:31:58,950 INFO    SenderThread:79447 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 17:31:59,165 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/wandb-summary.json
+2024-06-07 17:31:59,165 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:32:01,171 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:32:03,010 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 17:32:03,153 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 17:32:03,154 DEBUG   SenderThread:79447 [sender.py:send():378] send: history
+2024-06-07 17:32:03,154 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 17:32:03,154 INFO    SenderThread:79447 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 17:32:03,182 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/wandb-summary.json
+2024-06-07 17:32:03,183 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:32:05,193 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:32:07,087 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 17:32:07,087 DEBUG   SenderThread:79447 [sender.py:send():378] send: history
+2024-06-07 17:32:07,087 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 17:32:07,088 INFO    SenderThread:79447 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 17:32:07,203 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/wandb-summary.json
+2024-06-07 17:32:07,203 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:32:08,112 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 17:32:08,540 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 17:32:08,540 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 17:32:09,213 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:32:09,214 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/config.yaml
+2024-06-07 17:32:10,966 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 17:32:10,967 DEBUG   SenderThread:79447 [sender.py:send():378] send: history
+2024-06-07 17:32:10,967 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 17:32:10,967 INFO    SenderThread:79447 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 17:32:11,224 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/wandb-summary.json
+2024-06-07 17:32:11,224 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:32:13,234 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:32:13,331 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 17:32:14,804 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 17:32:14,805 DEBUG   SenderThread:79447 [sender.py:send():378] send: history
+2024-06-07 17:32:14,805 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 17:32:14,805 INFO    SenderThread:79447 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 17:32:15,245 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/wandb-summary.json
+2024-06-07 17:32:15,245 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:32:17,256 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:32:18,388 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 17:32:18,610 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 17:32:18,610 DEBUG   SenderThread:79447 [sender.py:send():378] send: history
+2024-06-07 17:32:18,610 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 17:32:18,611 INFO    SenderThread:79447 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 17:32:19,266 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/wandb-summary.json
+2024-06-07 17:32:19,266 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:32:21,277 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:32:22,512 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 17:32:22,512 DEBUG   SenderThread:79447 [sender.py:send():378] send: history
+2024-06-07 17:32:22,512 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 17:32:22,513 INFO    SenderThread:79447 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 17:32:23,287 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/wandb-summary.json
+2024-06-07 17:32:23,288 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:32:23,408 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 17:32:23,545 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 17:32:23,545 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 17:32:25,298 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:32:26,337 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 17:32:26,337 DEBUG   SenderThread:79447 [sender.py:send():378] send: history
+2024-06-07 17:32:26,337 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 17:32:26,337 INFO    SenderThread:79447 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 17:32:27,308 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/wandb-summary.json
+2024-06-07 17:32:27,308 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:32:28,438 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 17:32:29,318 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:32:30,098 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 17:32:30,098 DEBUG   SenderThread:79447 [sender.py:send():378] send: history
+2024-06-07 17:32:30,098 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 17:32:30,098 INFO    SenderThread:79447 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 17:32:30,324 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/wandb-summary.json
+2024-06-07 17:32:31,329 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:32:33,339 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:32:33,447 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 17:32:33,872 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 17:32:33,872 DEBUG   SenderThread:79447 [sender.py:send():378] send: history
+2024-06-07 17:32:33,872 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 17:32:33,872 INFO    SenderThread:79447 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 17:32:34,344 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/wandb-summary.json
+2024-06-07 17:32:35,348 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:32:37,358 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:32:37,785 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 17:32:37,785 DEBUG   SenderThread:79447 [sender.py:send():378] send: history
+2024-06-07 17:32:37,785 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 17:32:37,786 INFO    SenderThread:79447 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 17:32:37,787 DEBUG   SenderThread:79447 [sender.py:send():378] send: telemetry
+2024-06-07 17:32:37,789 DEBUG   SenderThread:79447 [sender.py:send():378] send: exit
+2024-06-07 17:32:37,789 INFO    SenderThread:79447 [sender.py:send_exit():585] handling exit code: 0
+2024-06-07 17:32:37,789 INFO    SenderThread:79447 [sender.py:send_exit():587] handling runtime: 59
+2024-06-07 17:32:37,789 INFO    SenderThread:79447 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 17:32:37,789 INFO    SenderThread:79447 [sender.py:send_exit():593] send defer
+2024-06-07 17:32:37,789 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 17:32:37,789 INFO    HandlerThread:79447 [handler.py:handle_request_defer():184] handle defer: 0
+2024-06-07 17:32:37,789 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: defer
+2024-06-07 17:32:37,789 INFO    SenderThread:79447 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-06-07 17:32:37,789 INFO    SenderThread:79447 [sender.py:transition_state():613] send defer: 1
+2024-06-07 17:32:37,789 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 17:32:37,789 INFO    HandlerThread:79447 [handler.py:handle_request_defer():184] handle defer: 1
+2024-06-07 17:32:37,789 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: defer
+2024-06-07 17:32:37,789 INFO    SenderThread:79447 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-06-07 17:32:37,789 INFO    SenderThread:79447 [sender.py:transition_state():613] send defer: 2
+2024-06-07 17:32:37,789 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 17:32:37,789 INFO    HandlerThread:79447 [handler.py:handle_request_defer():184] handle defer: 2
+2024-06-07 17:32:37,789 INFO    HandlerThread:79447 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-07 17:32:37,789 DEBUG   SystemMonitor:79447 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-07 17:32:37,790 DEBUG   SystemMonitor:79447 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-07 17:32:37,790 DEBUG   SystemMonitor:79447 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-07 17:32:37,790 INFO    HandlerThread:79447 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-07 17:32:37,790 INFO    HandlerThread:79447 [interfaces.py:finish():200] Joined disk monitor
+2024-06-07 17:32:37,790 INFO    HandlerThread:79447 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-07 17:32:37,790 INFO    HandlerThread:79447 [interfaces.py:finish():200] Joined memory monitor
+2024-06-07 17:32:37,790 INFO    HandlerThread:79447 [interfaces.py:finish():200] Joined network monitor
+2024-06-07 17:32:37,790 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: defer
+2024-06-07 17:32:37,790 INFO    SenderThread:79447 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-06-07 17:32:37,790 INFO    SenderThread:79447 [sender.py:transition_state():613] send defer: 3
+2024-06-07 17:32:37,790 DEBUG   SenderThread:79447 [sender.py:send():378] send: stats
+2024-06-07 17:32:37,790 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 17:32:37,790 INFO    HandlerThread:79447 [handler.py:handle_request_defer():184] handle defer: 3
+2024-06-07 17:32:37,790 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: defer
+2024-06-07 17:32:37,790 INFO    SenderThread:79447 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-06-07 17:32:37,790 INFO    SenderThread:79447 [sender.py:transition_state():613] send defer: 4
+2024-06-07 17:32:37,790 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 17:32:37,790 INFO    HandlerThread:79447 [handler.py:handle_request_defer():184] handle defer: 4
+2024-06-07 17:32:37,791 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: defer
+2024-06-07 17:32:37,791 INFO    SenderThread:79447 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-06-07 17:32:37,791 INFO    SenderThread:79447 [sender.py:transition_state():613] send defer: 5
+2024-06-07 17:32:37,791 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 17:32:37,791 INFO    HandlerThread:79447 [handler.py:handle_request_defer():184] handle defer: 5
+2024-06-07 17:32:37,791 DEBUG   SenderThread:79447 [sender.py:send():378] send: summary
+2024-06-07 17:32:37,791 INFO    SenderThread:79447 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 17:32:37,791 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: defer
+2024-06-07 17:32:37,791 INFO    SenderThread:79447 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-06-07 17:32:37,791 INFO    SenderThread:79447 [sender.py:transition_state():613] send defer: 6
+2024-06-07 17:32:37,791 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 17:32:37,791 INFO    HandlerThread:79447 [handler.py:handle_request_defer():184] handle defer: 6
+2024-06-07 17:32:37,791 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: defer
+2024-06-07 17:32:37,791 INFO    SenderThread:79447 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-06-07 17:32:37,792 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 17:32:37,942 INFO    SenderThread:79447 [sender.py:transition_state():613] send defer: 7
+2024-06-07 17:32:37,942 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 17:32:37,942 INFO    HandlerThread:79447 [handler.py:handle_request_defer():184] handle defer: 7
+2024-06-07 17:32:37,942 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: defer
+2024-06-07 17:32:37,942 INFO    SenderThread:79447 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-06-07 17:32:38,364 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/wandb-summary.json
+2024-06-07 17:32:38,365 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/config.yaml
+2024-06-07 17:32:38,793 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-07 17:32:39,368 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:32:40,734 INFO    SenderThread:79447 [sender.py:transition_state():613] send defer: 8
+2024-06-07 17:32:40,735 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: poll_exit
+2024-06-07 17:32:40,735 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 17:32:40,736 INFO    HandlerThread:79447 [handler.py:handle_request_defer():184] handle defer: 8
+2024-06-07 17:32:40,736 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: defer
+2024-06-07 17:32:40,736 INFO    SenderThread:79447 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-06-07 17:32:40,737 INFO    SenderThread:79447 [job_builder.py:build():432] Attempting to build job artifact
+2024-06-07 17:32:40,738 INFO    SenderThread:79447 [job_builder.py:_get_source_type():565] is repo sourced job
+2024-06-07 17:32:40,738 INFO    SenderThread:79447 [job_builder.py:_get_program_relpath():583] run is notebook based run
+2024-06-07 17:32:40,739 WARNING SenderThread:79447 [job_builder.py:_log_if_verbose():267] Source type is set to 'repo' but some required information is missing from the environment. A job will not be created from this run. See https://docs.wandb.ai/guides/launch/create-job
+2024-06-07 17:32:40,739 INFO    SenderThread:79447 [sender.py:transition_state():613] send defer: 9
+2024-06-07 17:32:40,739 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 17:32:40,739 INFO    HandlerThread:79447 [handler.py:handle_request_defer():184] handle defer: 9
+2024-06-07 17:32:40,739 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: defer
+2024-06-07 17:32:40,739 INFO    SenderThread:79447 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-06-07 17:32:40,739 INFO    SenderThread:79447 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-06-07 17:32:40,800 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-07 17:32:41,376 INFO    Thread-12 :79447 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:32:41,377 INFO    SenderThread:79447 [dir_watcher.py:finish():388] scan: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files
+2024-06-07 17:32:41,377 INFO    SenderThread:79447 [dir_watcher.py:finish():402] scan save: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/requirements.txt requirements.txt
+2024-06-07 17:32:41,377 INFO    SenderThread:79447 [dir_watcher.py:finish():402] scan save: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log output.log
+2024-06-07 17:32:41,380 INFO    SenderThread:79447 [dir_watcher.py:finish():402] scan save: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/config.yaml config.yaml
+2024-06-07 17:32:41,382 INFO    SenderThread:79447 [dir_watcher.py:finish():402] scan save: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/wandb-summary.json wandb-summary.json
+2024-06-07 17:32:41,386 INFO    SenderThread:79447 [dir_watcher.py:finish():402] scan save: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/wandb-metadata.json wandb-metadata.json
+2024-06-07 17:32:41,386 INFO    SenderThread:79447 [sender.py:transition_state():613] send defer: 10
+2024-06-07 17:32:41,387 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: poll_exit
+2024-06-07 17:32:41,390 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 17:32:41,390 INFO    HandlerThread:79447 [handler.py:handle_request_defer():184] handle defer: 10
+2024-06-07 17:32:41,391 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: defer
+2024-06-07 17:32:41,392 INFO    SenderThread:79447 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-06-07 17:32:41,392 INFO    SenderThread:79447 [file_pusher.py:finish():169] shutting down file pusher
+2024-06-07 17:32:41,766 INFO    wandb-upload_0:79447 [upload_job.py:push():130] Uploaded file /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/requirements.txt
+2024-06-07 17:32:41,802 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-07 17:32:41,802 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: poll_exit
+2024-06-07 17:32:41,823 INFO    wandb-upload_1:79447 [upload_job.py:push():130] Uploaded file /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/output.log
+2024-06-07 17:32:41,837 INFO    wandb-upload_2:79447 [upload_job.py:push():130] Uploaded file /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/config.yaml
+2024-06-07 17:32:41,882 INFO    wandb-upload_3:79447 [upload_job.py:push():130] Uploaded file /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/files/wandb-summary.json
+2024-06-07 17:32:42,087 INFO    Thread-11 (_thread_body):79447 [sender.py:transition_state():613] send defer: 11
+2024-06-07 17:32:42,092 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 17:32:42,092 INFO    HandlerThread:79447 [handler.py:handle_request_defer():184] handle defer: 11
+2024-06-07 17:32:42,095 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: defer
+2024-06-07 17:32:42,095 INFO    SenderThread:79447 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-06-07 17:32:42,095 INFO    SenderThread:79447 [file_pusher.py:join():175] waiting for file pusher
+2024-06-07 17:32:42,097 INFO    SenderThread:79447 [sender.py:transition_state():613] send defer: 12
+2024-06-07 17:32:42,097 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 17:32:42,097 INFO    HandlerThread:79447 [handler.py:handle_request_defer():184] handle defer: 12
+2024-06-07 17:32:42,097 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: defer
+2024-06-07 17:32:42,097 INFO    SenderThread:79447 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-06-07 17:32:42,097 INFO    SenderThread:79447 [file_stream.py:finish():601] file stream finish called
+2024-06-07 17:32:42,551 INFO    SenderThread:79447 [file_stream.py:finish():605] file stream finish is done
+2024-06-07 17:32:42,551 INFO    SenderThread:79447 [sender.py:transition_state():613] send defer: 13
+2024-06-07 17:32:42,552 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 17:32:42,552 INFO    HandlerThread:79447 [handler.py:handle_request_defer():184] handle defer: 13
+2024-06-07 17:32:42,552 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: defer
+2024-06-07 17:32:42,553 INFO    SenderThread:79447 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-06-07 17:32:42,553 INFO    SenderThread:79447 [sender.py:transition_state():613] send defer: 14
+2024-06-07 17:32:42,553 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 17:32:42,554 DEBUG   SenderThread:79447 [sender.py:send():378] send: final
+2024-06-07 17:32:42,554 INFO    HandlerThread:79447 [handler.py:handle_request_defer():184] handle defer: 14
+2024-06-07 17:32:42,554 DEBUG   SenderThread:79447 [sender.py:send():378] send: footer
+2024-06-07 17:32:42,554 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: defer
+2024-06-07 17:32:42,554 INFO    SenderThread:79447 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-06-07 17:32:42,556 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-07 17:32:42,556 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: poll_exit
+2024-06-07 17:32:42,557 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-07 17:32:42,558 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: server_info
+2024-06-07 17:32:42,558 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: get_summary
+2024-06-07 17:32:42,558 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: sampled_history
+2024-06-07 17:32:42,558 DEBUG   SenderThread:79447 [sender.py:send_request():405] send_request: server_info
+2024-06-07 17:32:42,715 DEBUG   HandlerThread:79447 [handler.py:handle_request():158] handle_request: shutdown
+2024-06-07 17:32:42,716 INFO    HandlerThread:79447 [handler.py:finish():882] shutting down handler
+2024-06-07 17:32:43,559 INFO    WriterThread:79447 [datastore.py:close():296] close: /Users/mariayuffa/semester-project-1/wandb/run-20240607_173137-uprkbiwh/run-uprkbiwh.wandb
+2024-06-07 17:32:43,718 INFO    SenderThread:79447 [sender.py:finish():1545] shutting down sender
+2024-06-07 17:32:43,718 INFO    SenderThread:79447 [file_pusher.py:finish():169] shutting down file pusher
+2024-06-07 17:32:43,718 INFO    SenderThread:79447 [file_pusher.py:join():175] waiting for file pusher
