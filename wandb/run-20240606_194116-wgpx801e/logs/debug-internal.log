@@ -1,0 +1,1466 @@
+2024-06-06 19:41:16,410 INFO    StreamThr :47457 [internal.py:wandb_internal():85] W&B internal server running at pid: 47457, started at: 2024-06-06 19:41:16.409576
+2024-06-06 19:41:16,411 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status
+2024-06-06 19:41:16,414 INFO    WriterThread:47457 [datastore.py:open_for_write():87] open: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/run-wgpx801e.wandb
+2024-06-06 19:41:16,414 DEBUG   SenderThread:47457 [sender.py:send():378] send: header
+2024-06-06 19:41:16,438 DEBUG   SenderThread:47457 [sender.py:send():378] send: run
+2024-06-06 19:41:16,818 INFO    SenderThread:47457 [dir_watcher.py:__init__():211] watching files in: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files
+2024-06-06 19:41:16,819 INFO    SenderThread:47457 [sender.py:_start_run_threads():1123] run started: wgpx801e with start time 1717695676.410752
+2024-06-06 19:41:16,827 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: check_version
+2024-06-06 19:41:16,827 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: check_version
+2024-06-06 19:41:16,909 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: run_start
+2024-06-06 19:41:16,916 DEBUG   HandlerThread:47457 [system_info.py:__init__():26] System info init
+2024-06-06 19:41:16,917 DEBUG   HandlerThread:47457 [system_info.py:__init__():41] System info init done
+2024-06-06 19:41:16,917 INFO    HandlerThread:47457 [system_monitor.py:start():194] Starting system monitor
+2024-06-06 19:41:16,917 INFO    SystemMonitor:47457 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-06 19:41:16,917 INFO    HandlerThread:47457 [system_monitor.py:probe():214] Collecting system info
+2024-06-06 19:41:16,918 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started cpu monitoring
+2024-06-06 19:41:16,920 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started disk monitoring
+2024-06-06 19:41:16,921 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-06 19:41:16,925 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started memory monitoring
+2024-06-06 19:41:16,925 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started network monitoring
+2024-06-06 19:41:17,272 DEBUG   HandlerThread:47457 [system_info.py:probe():150] Probing system
+2024-06-06 19:41:17,276 DEBUG   HandlerThread:47457 [system_info.py:_probe_git():135] Probing git
+2024-06-06 19:41:17,290 DEBUG   HandlerThread:47457 [system_info.py:_probe_git():143] Probing git done
+2024-06-06 19:41:17,290 DEBUG   HandlerThread:47457 [system_info.py:probe():198] Probing system done
+2024-06-06 19:41:17,290 DEBUG   HandlerThread:47457 [system_monitor.py:probe():223] {'os': 'macOS-14.4.1-arm64-arm-64bit', 'python': '3.12.3', 'heartbeatAt': '2024-06-06T17:41:17.272906', 'startedAt': '2024-06-06T17:41:16.402716', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'https://github.com/marindigen/semester-project.git', 'commit': '6cde453ddb3c3b3cf5e84f7cad8b19f6f1a84fce'}, 'email': 'mariia.iuffa@gmail.com', 'root': '/Users/mariayuffa/semester-project-1', 'host': 'eduroam-269-0-165.epfl.ch', 'username': 'mariayuffa', 'executable': '/Users/mariayuffa/semester-project-1/.venv/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'cpu_freq': {'current': 3504, 'min': 702, 'max': 3504}, 'cpu_freq_per_core': [{'current': 3504, 'min': 702, 'max': 3504}], 'disk': {'/': {'total': 460.4317207336426, 'used': 12.54928970336914}}, 'gpuapple': {'type': 'Apple M2 Pro', 'vendor': 'sppci_vendor_Apple'}, 'memory': {'total': 16.0}}
+2024-06-06 19:41:17,290 INFO    HandlerThread:47457 [system_monitor.py:probe():224] Finished collecting system info
+2024-06-06 19:41:17,290 INFO    HandlerThread:47457 [system_monitor.py:probe():227] Publishing system info
+2024-06-06 19:41:17,290 INFO    HandlerThread:47457 [system_monitor.py:probe():229] Finished publishing system info
+2024-06-06 19:41:17,296 DEBUG   SenderThread:47457 [sender.py:send():378] send: files
+2024-06-06 19:41:17,296 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-metadata.json with policy now
+2024-06-06 19:41:17,343 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: python_packages
+2024-06-06 19:41:17,343 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: python_packages
+2024-06-06 19:41:17,344 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:41:17,344 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:41:17,346 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: pause
+2024-06-06 19:41:17,346 INFO    HandlerThread:47457 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-06 19:41:17,346 INFO    HandlerThread:47457 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-06 19:41:17,346 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-06 19:41:17,346 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-06 19:41:17,347 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined disk monitor
+2024-06-06 19:41:17,347 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-06 19:41:17,347 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-06 19:41:17,347 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-06 19:41:17,347 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined memory monitor
+2024-06-06 19:41:17,347 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined network monitor
+2024-06-06 19:41:17,549 DEBUG   SenderThread:47457 [sender.py:send():378] send: telemetry
+2024-06-06 19:41:17,550 DEBUG   SenderThread:47457 [sender.py:send():378] send: telemetry
+2024-06-06 19:41:17,550 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:41:17,825 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-metadata.json
+2024-06-06 19:41:17,825 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/requirements.txt
+2024-06-06 19:41:17,838 INFO    wandb-upload_0:47457 [upload_job.py:push():130] Uploaded file /var/folders/mg/44g5ch495hdc8x4_5mq3dsdm0000gn/T/tmp6nbxtbbywandb/aho5sjll-wandb-metadata.json
+2024-06-06 19:41:19,519 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: resume
+2024-06-06 19:41:19,519 INFO    HandlerThread:47457 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-06 19:41:19,519 INFO    HandlerThread:47457 [system_monitor.py:start():194] Starting system monitor
+2024-06-06 19:41:19,519 INFO    SystemMonitor:47457 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-06 19:41:19,520 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started cpu monitoring
+2024-06-06 19:41:19,520 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started disk monitoring
+2024-06-06 19:41:19,520 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-06 19:41:19,523 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started memory monitoring
+2024-06-06 19:41:19,524 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started network monitoring
+2024-06-06 19:41:20,838 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:41:21,432 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:41:22,849 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:41:24,859 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:41:26,525 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:41:26,867 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:41:28,873 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:41:29,066 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:41:29,067 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:41:29,067 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:41:29,067 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:41:29,876 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:41:29,877 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:41:30,882 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:41:31,537 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:41:32,347 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:41:32,348 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:41:32,887 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:41:34,892 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:41:36,592 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:41:36,903 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:41:37,719 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:41:37,720 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:41:37,720 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:41:37,720 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:41:37,908 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:41:37,908 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:41:38,908 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:41:39,913 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:41:40,919 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:41:41,621 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:41:42,929 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:41:44,939 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:41:45,944 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:41:46,238 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:41:46,238 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:41:46,239 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:41:46,239 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:41:46,665 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:41:46,946 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:41:46,946 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:41:46,946 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/config.yaml
+2024-06-06 19:41:47,347 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:41:47,347 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:41:47,952 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:41:48,957 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:41:50,967 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:41:51,863 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:41:52,977 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:41:53,983 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:41:54,919 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:41:54,919 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:41:54,920 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:41:54,920 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:41:54,988 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:41:54,988 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:41:55,993 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:41:56,943 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:41:56,998 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:41:59,009 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:01,018 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:02,042 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:42:02,347 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:42:02,347 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:42:03,028 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:03,519 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:42:03,519 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:42:03,519 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:42:03,520 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:42:04,033 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:04,033 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:42:05,035 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:07,046 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:07,058 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:42:09,056 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:11,066 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:11,707 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:42:11,707 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:42:11,707 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:42:11,708 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:42:12,072 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:12,072 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:42:12,113 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:42:13,077 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:15,083 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:17,090 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:17,178 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:42:17,352 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:42:17,352 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:42:19,101 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:19,529 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-06 19:42:19,530 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:42:19,801 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:42:19,801 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:42:19,801 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:42:19,802 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:42:20,106 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:20,106 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:42:21,111 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:22,116 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:22,254 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:42:23,121 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:25,129 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:27,137 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:27,310 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:42:28,143 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:28,167 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:42:28,168 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:42:28,168 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:42:28,168 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:42:29,148 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:29,148 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:42:30,153 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:32,161 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:32,356 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:42:32,356 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:42:32,605 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:42:34,164 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:36,174 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:37,505 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:42:37,506 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:42:37,506 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:42:37,506 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:42:37,615 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:42:38,183 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:38,183 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:42:40,193 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:42,204 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:42,646 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:42:44,214 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:45,791 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:42:45,792 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:42:45,792 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:42:45,792 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:42:46,220 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:46,220 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:42:47,361 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:42:47,361 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:42:47,670 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:42:48,227 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:49,532 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:42:50,234 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:52,244 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:52,677 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:42:54,255 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:54,657 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:42:54,658 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:42:54,658 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:42:54,658 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:42:55,256 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:42:56,262 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:42:57,683 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:42:58,270 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:43:00,277 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:43:02,288 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:43:02,366 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:43:02,366 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:43:02,708 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:43:04,298 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:43:04,419 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:43:04,420 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:43:04,420 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:43:04,420 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:43:05,300 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:43:06,305 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:43:07,792 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:43:08,315 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:43:10,320 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:43:12,328 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:43:12,865 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:43:13,953 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:43:13,953 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:43:13,953 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:43:13,954 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:43:14,335 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:43:14,335 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:43:16,345 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:43:17,371 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:43:17,371 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:43:17,896 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:43:18,356 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:43:19,538 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:43:20,366 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:43:22,375 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:43:22,758 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:43:22,758 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:43:22,758 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:43:22,759 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:43:22,972 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:43:23,378 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:43:24,381 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:43:26,392 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:43:28,055 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:43:28,401 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:43:30,411 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:43:32,000 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:43:32,001 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:43:32,001 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:43:32,001 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:43:32,376 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:43:32,377 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:43:32,422 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:43:32,422 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:43:33,154 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:43:34,430 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:43:36,441 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:43:38,182 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:43:38,446 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:43:40,451 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:43:40,787 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:43:40,787 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:43:40,787 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:43:40,788 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:43:41,457 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:43:42,462 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:43:43,223 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:43:44,467 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:43:46,475 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:43:47,380 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:43:47,380 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:43:48,231 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:43:48,481 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:43:49,543 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:43:50,338 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:43:50,338 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:43:50,338 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:43:50,339 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:43:50,490 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:43:50,490 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:43:52,497 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:43:53,231 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:43:54,507 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:43:56,518 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:43:58,264 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:43:58,528 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:00,134 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:44:00,135 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:44:00,135 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:44:00,135 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:44:00,538 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:00,538 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:44:02,384 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:44:02,385 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:44:02,543 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:03,278 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:44:04,553 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:06,561 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:08,352 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:44:08,569 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:08,833 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:44:08,834 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:44:08,834 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:44:08,834 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:44:09,574 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:44:10,579 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:12,588 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:13,396 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:44:14,596 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:16,607 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:17,014 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:44:17,014 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:44:17,014 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:44:17,014 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:44:17,389 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:44:17,389 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:44:17,612 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:44:18,404 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:44:18,617 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:19,548 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:44:20,628 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:22,638 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:23,461 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:44:24,648 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:25,173 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:44:25,174 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:44:25,174 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:44:25,174 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:44:25,653 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:44:26,654 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:28,555 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:44:28,659 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:30,670 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:32,394 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:44:32,395 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:44:32,681 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:33,298 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:44:33,299 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:44:33,299 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:44:33,299 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:44:33,640 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:44:33,682 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:44:34,687 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:36,695 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:38,649 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:44:38,705 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:40,712 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:41,577 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:44:41,577 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:44:41,578 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:44:41,578 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:44:41,717 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:44:42,722 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:43,655 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:44:44,732 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:46,738 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:47,395 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:44:47,395 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:44:48,669 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:44:48,748 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:49,553 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:44:50,527 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:44:50,527 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:44:50,527 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:44:50,528 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:44:50,759 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:50,759 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:44:52,766 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:53,710 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:44:54,772 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:56,782 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:58,769 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:44:58,793 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:44:59,265 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:44:59,266 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:44:59,266 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:44:59,266 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:44:59,798 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:45:00,803 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:45:02,395 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:45:02,395 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:45:02,813 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:45:03,824 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:45:04,824 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:45:06,834 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:45:07,945 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:45:07,945 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:45:07,945 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:45:07,946 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:45:08,845 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:45:08,845 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:45:08,921 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:45:10,848 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:45:12,856 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:45:13,978 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:45:14,861 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:45:16,459 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:45:16,460 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:45:16,460 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:45:16,460 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:45:16,872 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:45:16,872 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:45:17,400 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:45:17,400 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:45:18,882 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:45:19,078 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:45:19,558 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:45:20,891 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:45:22,897 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:45:24,083 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:45:24,908 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:45:25,621 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:45:25,622 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:45:25,622 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:45:25,622 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:45:25,913 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:45:26,918 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:45:28,927 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:45:29,131 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:45:30,932 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:45:32,405 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:45:32,406 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:45:32,935 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:45:34,133 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:45:34,941 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:45:35,784 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:45:35,785 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:45:35,785 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:45:35,785 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:45:35,946 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:45:36,951 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:45:38,961 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:45:39,136 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:45:40,971 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:45:42,982 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:45:44,223 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:45:44,975 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:45:44,975 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:45:44,975 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:45:44,976 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:45:44,991 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:45:44,991 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:45:47,001 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:45:47,410 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:45:47,410 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:45:49,003 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:45:49,256 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:45:49,563 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:45:51,014 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:45:53,024 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:45:53,211 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:45:53,212 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:45:53,212 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:45:53,212 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:45:54,029 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:45:54,277 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:45:55,034 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:45:57,041 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:45:59,052 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:45:59,361 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:46:01,062 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:46:02,415 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:46:02,415 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:46:02,779 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:46:02,780 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:46:02,780 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:46:02,780 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:46:03,070 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:46:03,070 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:46:04,414 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:46:05,081 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:46:07,089 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:46:09,097 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:46:09,464 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:46:11,108 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:46:12,358 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:46:12,359 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:46:12,359 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:46:12,359 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:46:13,118 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:46:13,118 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:46:14,497 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:46:15,129 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:46:17,137 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:46:17,420 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:46:17,420 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:46:19,148 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:46:19,510 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:46:19,569 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:46:21,158 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:46:22,689 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:46:22,689 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:46:22,690 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:46:22,690 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:46:23,168 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:46:23,168 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:46:24,591 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:46:25,179 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:46:27,189 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:46:29,198 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:46:29,697 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:46:31,208 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:46:32,159 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:46:32,159 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:46:32,160 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:46:32,160 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:46:32,214 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:46:32,425 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:46:32,425 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:46:33,214 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:46:34,794 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:46:35,222 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:46:37,230 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:46:39,240 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:46:39,847 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:46:41,251 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:46:41,564 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:46:41,565 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:46:41,565 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:46:41,565 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:46:42,256 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:46:43,260 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:46:44,929 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:46:45,263 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:46:47,273 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:46:47,426 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:46:47,426 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:46:49,284 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:46:49,574 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:46:49,992 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:46:51,294 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:46:53,304 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:46:55,038 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:46:55,311 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:46:56,274 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:46:56,274 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:46:56,274 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:46:56,274 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:46:56,316 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:46:57,321 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:46:59,331 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:00,138 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:47:01,342 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:02,431 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:47:02,431 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:47:03,349 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:05,150 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:47:05,359 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:06,319 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:47:06,320 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:47:06,320 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:47:06,320 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:47:06,360 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:47:07,364 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:09,371 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:10,154 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:47:11,380 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:13,389 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:15,198 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:47:15,399 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:16,602 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:47:16,603 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:47:16,603 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:47:16,603 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:47:17,406 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:17,407 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:47:17,436 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:47:17,436 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:47:19,417 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:19,575 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:47:20,220 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:47:21,425 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:23,435 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:25,223 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:47:25,439 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:27,220 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:47:27,220 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:47:27,220 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:47:27,220 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:47:27,442 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:27,442 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:47:29,452 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:30,253 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:47:31,462 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:32,441 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:47:32,441 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:47:33,472 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:35,349 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:47:35,478 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:37,488 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:37,739 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:47:37,739 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:47:37,739 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:47:37,739 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:47:38,494 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:47:39,495 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:40,395 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:47:41,502 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:43,512 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:45,497 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:47:45,522 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:47,444 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:47:47,444 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:47:47,532 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:47,608 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:47:47,747 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:47:47,747 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:47:47,748 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:47:48,538 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:47:49,540 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:49,581 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:47:50,510 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:47:51,551 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:53,553 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:55,539 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:47:55,566 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:57,576 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:59,586 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:47:59,824 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:47:59,825 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:47:59,825 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:47:59,825 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:48:00,558 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:48:00,592 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:48:01,597 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:48:02,448 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:48:02,449 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:48:03,607 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:48:05,598 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:48:05,616 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:48:07,626 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:48:09,370 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:48:09,371 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:48:09,371 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:48:09,371 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:48:09,635 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:48:09,635 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:48:10,650 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:48:11,645 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:48:13,656 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:48:15,666 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:48:15,686 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:48:17,453 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:48:17,453 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:48:17,677 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:48:18,635 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:48:18,636 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:48:18,636 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:48:18,636 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:48:18,682 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:48:19,586 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:48:19,687 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:48:20,723 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:48:21,697 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:48:23,706 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:48:25,712 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:48:25,728 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:48:27,723 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:48:27,840 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:48:27,840 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:48:27,840 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:48:27,840 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:48:28,728 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:48:29,733 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:48:30,744 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:48:31,740 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:48:32,456 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:48:32,456 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:48:33,742 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:48:35,752 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:48:35,758 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:48:37,762 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:48:39,768 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:48:40,822 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:48:40,965 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:48:40,966 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:48:40,966 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:48:40,966 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:48:41,778 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:48:41,778 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:48:43,789 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:48:45,800 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:48:45,932 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:48:47,460 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:48:47,461 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:48:47,810 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:48:49,586 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:48:49,820 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:48:50,991 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:48:51,721 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:48:51,722 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:48:51,722 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:48:51,722 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:48:51,830 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:48:51,830 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:48:53,834 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:48:55,844 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:48:56,003 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:48:57,854 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:48:59,865 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:49:00,860 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:49:00,861 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:49:00,861 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:49:00,861 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:49:00,870 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:49:01,075 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:49:01,873 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:49:02,465 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:49:02,466 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:49:03,883 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:49:05,894 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:49:06,152 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:49:07,903 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:49:09,909 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:49:10,863 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-06 19:49:10,863 DEBUG   SenderThread:47457 [sender.py:send():378] send: history
+2024-06-06 19:49:10,864 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: summary_record
+2024-06-06 19:49:10,864 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:49:10,865 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: pause
+2024-06-06 19:49:10,865 INFO    HandlerThread:47457 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-06 19:49:10,865 INFO    HandlerThread:47457 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-06 19:49:10,865 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-06 19:49:10,866 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-06 19:49:10,866 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-06 19:49:10,866 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined disk monitor
+2024-06-06 19:49:10,866 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-06 19:49:10,866 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined memory monitor
+2024-06-06 19:49:10,866 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined network monitor
+2024-06-06 19:49:10,866 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:49:10,914 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:49:10,914 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:49:11,868 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:49:11,920 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:49:12,922 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:49:13,926 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:49:16,887 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:49:17,469 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:49:17,470 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:49:22,692 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:49:27,717 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:49:32,471 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:49:32,472 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:49:32,911 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:49:37,933 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:49:42,955 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:49:47,476 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:49:47,477 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:49:48,777 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:49:53,796 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:49:58,808 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:50:02,476 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:50:02,477 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:50:04,746 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:50:09,762 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:50:14,774 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:50:17,479 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:50:17,481 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:50:20,697 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:50:25,713 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:50:30,728 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:50:32,480 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:50:32,480 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:50:36,696 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:50:41,716 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:50:46,732 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:50:47,481 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:50:47,481 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:50:51,884 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:50:56,903 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:51:01,925 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:51:02,486 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:51:02,487 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:51:07,728 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:51:12,743 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:51:17,491 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:51:17,491 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:51:18,730 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:51:23,746 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:51:28,762 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:51:32,494 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:51:32,495 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:51:34,660 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:51:39,680 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:51:44,697 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:51:47,495 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:51:47,496 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:51:50,653 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:51:55,674 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:52:00,695 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:52:02,502 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:52:02,503 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:52:05,820 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:52:10,841 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:52:15,862 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:52:17,503 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:52:17,503 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:52:21,685 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:52:26,699 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:52:31,721 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:52:32,509 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:52:32,510 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:52:36,777 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:52:41,798 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:52:46,820 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:52:47,512 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:52:47,513 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:52:52,774 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:52:57,792 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:53:02,515 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:53:02,516 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:53:02,817 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:53:07,837 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:53:12,855 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:53:17,517 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:53:17,519 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:53:18,812 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:53:23,828 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:53:28,845 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:53:32,520 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:53:32,520 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:53:34,774 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:53:39,792 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:53:44,811 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:53:47,521 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:53:47,521 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:53:50,803 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:53:55,825 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:54:00,845 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:54:02,525 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:54:02,525 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:54:06,746 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:54:11,762 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:54:16,778 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:54:17,532 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:54:17,533 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:54:21,908 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:54:26,924 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:54:31,935 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:54:32,531 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:54:32,532 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:54:37,792 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:54:42,816 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:54:47,533 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:54:47,534 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:54:48,748 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:54:53,763 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:54:58,781 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:55:02,538 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:55:02,538 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:55:04,725 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:55:09,745 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:55:14,766 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:55:16,408 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: resume
+2024-06-06 19:55:16,408 INFO    HandlerThread:47457 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-06 19:55:16,408 INFO    HandlerThread:47457 [system_monitor.py:start():194] Starting system monitor
+2024-06-06 19:55:16,408 INFO    SystemMonitor:47457 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-06 19:55:16,409 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started cpu monitoring
+2024-06-06 19:55:16,409 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started disk monitoring
+2024-06-06 19:55:16,412 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-06 19:55:16,413 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started memory monitoring
+2024-06-06 19:55:16,414 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started network monitoring
+2024-06-06 19:55:16,416 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: pause
+2024-06-06 19:55:16,416 INFO    HandlerThread:47457 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-06 19:55:16,416 INFO    HandlerThread:47457 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-06 19:55:16,416 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-06 19:55:16,417 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-06 19:55:16,417 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-06 19:55:16,417 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-06 19:55:16,417 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined disk monitor
+2024-06-06 19:55:16,687 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-06 19:55:16,688 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined memory monitor
+2024-06-06 19:55:16,688 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined network monitor
+2024-06-06 19:55:16,688 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: resume
+2024-06-06 19:55:16,688 INFO    HandlerThread:47457 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-06 19:55:16,688 INFO    HandlerThread:47457 [system_monitor.py:start():194] Starting system monitor
+2024-06-06 19:55:16,688 INFO    SystemMonitor:47457 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-06 19:55:16,688 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: pause
+2024-06-06 19:55:16,688 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:55:16,688 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started cpu monitoring
+2024-06-06 19:55:16,688 INFO    HandlerThread:47457 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-06 19:55:16,689 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started disk monitoring
+2024-06-06 19:55:16,689 INFO    HandlerThread:47457 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-06 19:55:16,689 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-06 19:55:16,690 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-06 19:55:16,692 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-06 19:55:16,692 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined disk monitor
+2024-06-06 19:55:16,692 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-06 19:55:16,692 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-06 19:55:16,927 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-06 19:55:16,927 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:55:17,541 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:55:17,541 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:55:19,827 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: resume
+2024-06-06 19:55:19,827 INFO    HandlerThread:47457 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-06 19:55:19,827 INFO    HandlerThread:47457 [system_monitor.py:start():194] Starting system monitor
+2024-06-06 19:55:19,827 INFO    SystemMonitor:47457 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-06 19:55:19,827 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started cpu monitoring
+2024-06-06 19:55:19,827 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started disk monitoring
+2024-06-06 19:55:19,827 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-06 19:55:19,830 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started memory monitoring
+2024-06-06 19:55:19,831 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: pause
+2024-06-06 19:55:19,831 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started network monitoring
+2024-06-06 19:55:19,831 INFO    HandlerThread:47457 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-06 19:55:19,831 INFO    HandlerThread:47457 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-06 19:55:19,831 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-06 19:55:19,832 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-06 19:55:19,832 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined disk monitor
+2024-06-06 19:55:19,832 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-06 19:55:19,832 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-06 19:55:20,129 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-06 19:55:20,129 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined memory monitor
+2024-06-06 19:55:20,129 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined network monitor
+2024-06-06 19:55:20,129 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:55:20,130 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:55:22,869 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: resume
+2024-06-06 19:55:22,870 INFO    HandlerThread:47457 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-06 19:55:22,870 INFO    HandlerThread:47457 [system_monitor.py:start():194] Starting system monitor
+2024-06-06 19:55:22,870 INFO    SystemMonitor:47457 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-06 19:55:22,870 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started cpu monitoring
+2024-06-06 19:55:22,870 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started disk monitoring
+2024-06-06 19:55:22,871 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-06 19:55:22,871 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started memory monitoring
+2024-06-06 19:55:22,874 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started network monitoring
+2024-06-06 19:55:22,874 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: pause
+2024-06-06 19:55:22,875 INFO    HandlerThread:47457 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-06 19:55:22,875 INFO    HandlerThread:47457 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-06 19:55:22,875 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-06 19:55:22,876 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-06 19:55:22,876 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined disk monitor
+2024-06-06 19:55:22,876 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-06 19:55:22,876 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-06 19:55:23,182 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-06 19:55:23,182 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined memory monitor
+2024-06-06 19:55:23,182 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined network monitor
+2024-06-06 19:55:23,182 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:55:25,191 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:55:30,211 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:55:32,543 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:55:32,544 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:55:35,881 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:55:38,622 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: resume
+2024-06-06 19:55:38,622 INFO    HandlerThread:47457 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-06 19:55:38,622 INFO    HandlerThread:47457 [system_monitor.py:start():194] Starting system monitor
+2024-06-06 19:55:38,623 INFO    SystemMonitor:47457 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-06 19:55:38,624 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started cpu monitoring
+2024-06-06 19:55:38,627 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started disk monitoring
+2024-06-06 19:55:38,630 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-06 19:55:38,632 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: pause
+2024-06-06 19:55:38,632 INFO    HandlerThread:47457 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-06 19:55:38,632 INFO    HandlerThread:47457 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-06 19:55:38,634 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-06 19:55:38,635 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started memory monitoring
+2024-06-06 19:55:38,635 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-06 19:55:38,635 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-06 19:55:38,635 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-06 19:55:38,636 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined disk monitor
+2024-06-06 19:55:38,948 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-06 19:55:38,948 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined memory monitor
+2024-06-06 19:55:38,948 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:55:40,952 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:55:41,523 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: resume
+2024-06-06 19:55:41,523 INFO    HandlerThread:47457 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-06 19:55:41,523 INFO    HandlerThread:47457 [system_monitor.py:start():194] Starting system monitor
+2024-06-06 19:55:41,523 INFO    SystemMonitor:47457 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-06 19:55:41,524 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started cpu monitoring
+2024-06-06 19:55:41,524 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started disk monitoring
+2024-06-06 19:55:41,524 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-06 19:55:41,527 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: pause
+2024-06-06 19:55:41,527 INFO    HandlerThread:47457 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-06 19:55:41,527 INFO    HandlerThread:47457 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-06 19:55:41,527 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started memory monitoring
+2024-06-06 19:55:41,527 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-06 19:55:41,527 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-06 19:55:41,527 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-06 19:55:41,528 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-06 19:55:41,528 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined disk monitor
+2024-06-06 19:55:41,762 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-06 19:55:41,762 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined memory monitor
+2024-06-06 19:55:41,763 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:55:46,783 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:55:47,544 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:55:47,545 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:55:51,107 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: resume
+2024-06-06 19:55:51,107 INFO    HandlerThread:47457 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-06 19:55:51,107 INFO    HandlerThread:47457 [system_monitor.py:start():194] Starting system monitor
+2024-06-06 19:55:51,107 INFO    SystemMonitor:47457 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-06 19:55:51,108 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started cpu monitoring
+2024-06-06 19:55:51,108 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started disk monitoring
+2024-06-06 19:55:51,109 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-06 19:55:51,111 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started memory monitoring
+2024-06-06 19:55:51,111 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: pause
+2024-06-06 19:55:51,112 INFO    HandlerThread:47457 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-06 19:55:51,112 INFO    HandlerThread:47457 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-06 19:55:51,112 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started network monitoring
+2024-06-06 19:55:51,113 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-06 19:55:51,113 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-06 19:55:51,113 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined disk monitor
+2024-06-06 19:55:51,113 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-06 19:55:51,113 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-06 19:55:51,482 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-06 19:55:51,482 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined memory monitor
+2024-06-06 19:55:51,482 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined network monitor
+2024-06-06 19:55:51,482 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:55:52,487 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:55:53,464 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: resume
+2024-06-06 19:55:53,464 INFO    HandlerThread:47457 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-06 19:55:53,464 INFO    HandlerThread:47457 [system_monitor.py:start():194] Starting system monitor
+2024-06-06 19:55:53,465 INFO    SystemMonitor:47457 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-06 19:55:53,465 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started cpu monitoring
+2024-06-06 19:55:53,465 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started disk monitoring
+2024-06-06 19:55:53,467 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-06 19:55:53,469 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: pause
+2024-06-06 19:55:53,469 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started memory monitoring
+2024-06-06 19:55:53,469 INFO    HandlerThread:47457 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-06 19:55:53,469 INFO    HandlerThread:47457 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-06 19:55:53,470 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-06 19:55:53,470 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined disk monitor
+2024-06-06 19:55:53,470 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started network monitoring
+2024-06-06 19:55:53,470 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-06 19:55:53,470 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-06 19:55:53,470 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-06 19:55:53,705 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-06 19:55:53,705 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined memory monitor
+2024-06-06 19:55:53,705 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined network monitor
+2024-06-06 19:55:53,705 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:55:56,210 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: resume
+2024-06-06 19:55:56,211 INFO    HandlerThread:47457 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-06 19:55:56,211 INFO    HandlerThread:47457 [system_monitor.py:start():194] Starting system monitor
+2024-06-06 19:55:56,211 INFO    SystemMonitor:47457 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-06 19:55:56,211 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started cpu monitoring
+2024-06-06 19:55:56,211 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started disk monitoring
+2024-06-06 19:55:56,212 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-06 19:55:56,214 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started memory monitoring
+2024-06-06 19:55:56,215 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: pause
+2024-06-06 19:55:56,215 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started network monitoring
+2024-06-06 19:55:56,215 INFO    HandlerThread:47457 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-06 19:55:56,216 INFO    HandlerThread:47457 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-06 19:55:56,216 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-06 19:55:56,216 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-06 19:55:56,216 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-06 19:55:56,216 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined disk monitor
+2024-06-06 19:55:56,216 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-06 19:55:56,546 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-06 19:55:56,547 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined memory monitor
+2024-06-06 19:55:56,547 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined network monitor
+2024-06-06 19:55:56,547 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:55:57,552 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:55:58,559 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: resume
+2024-06-06 19:55:58,559 INFO    HandlerThread:47457 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-06 19:55:58,559 INFO    HandlerThread:47457 [system_monitor.py:start():194] Starting system monitor
+2024-06-06 19:55:58,559 INFO    SystemMonitor:47457 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-06 19:55:58,560 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started cpu monitoring
+2024-06-06 19:55:58,560 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started disk monitoring
+2024-06-06 19:55:58,560 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-06 19:55:58,564 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: pause
+2024-06-06 19:55:58,564 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started memory monitoring
+2024-06-06 19:55:58,564 INFO    HandlerThread:47457 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-06 19:55:58,565 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started network monitoring
+2024-06-06 19:55:58,565 INFO    HandlerThread:47457 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-06 19:55:58,565 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-06 19:55:58,565 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-06 19:55:58,565 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined disk monitor
+2024-06-06 19:55:58,565 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-06 19:55:58,565 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-06 19:55:58,967 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-06 19:55:58,967 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined memory monitor
+2024-06-06 19:55:58,967 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined network monitor
+2024-06-06 19:55:58,968 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:56:02,545 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:56:02,545 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:56:02,847 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:56:06,433 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: resume
+2024-06-06 19:56:06,433 INFO    HandlerThread:47457 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-06 19:56:06,433 INFO    HandlerThread:47457 [system_monitor.py:start():194] Starting system monitor
+2024-06-06 19:56:06,433 INFO    SystemMonitor:47457 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-06 19:56:06,433 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started cpu monitoring
+2024-06-06 19:56:06,433 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started disk monitoring
+2024-06-06 19:56:06,434 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-06 19:56:06,436 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: pause
+2024-06-06 19:56:06,437 INFO    HandlerThread:47457 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-06 19:56:06,437 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started memory monitoring
+2024-06-06 19:56:06,437 INFO    HandlerThread:47457 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-06 19:56:06,437 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started network monitoring
+2024-06-06 19:56:06,438 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-06 19:56:06,438 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-06 19:56:06,438 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined disk monitor
+2024-06-06 19:56:06,438 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-06 19:56:06,438 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-06 19:56:06,699 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-06 19:56:06,699 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined memory monitor
+2024-06-06 19:56:06,699 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined network monitor
+2024-06-06 19:56:06,699 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:56:08,708 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:56:12,830 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: resume
+2024-06-06 19:56:12,830 INFO    HandlerThread:47457 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-06 19:56:12,830 INFO    HandlerThread:47457 [system_monitor.py:start():194] Starting system monitor
+2024-06-06 19:56:12,830 INFO    SystemMonitor:47457 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-06 19:56:12,830 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started cpu monitoring
+2024-06-06 19:56:12,831 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started disk monitoring
+2024-06-06 19:56:12,831 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-06 19:56:12,839 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started memory monitoring
+2024-06-06 19:56:12,839 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: pause
+2024-06-06 19:56:12,839 INFO    HandlerThread:47457 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-06 19:56:12,840 INFO    HandlerThread:47457 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-06 19:56:12,842 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started network monitoring
+2024-06-06 19:56:12,843 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-06 19:56:12,843 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-06 19:56:12,843 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-06 19:56:12,844 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-06 19:56:12,846 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined disk monitor
+2024-06-06 19:56:13,088 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-06 19:56:13,088 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined memory monitor
+2024-06-06 19:56:13,088 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined network monitor
+2024-06-06 19:56:13,088 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:56:14,093 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:56:17,550 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:56:17,550 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:56:19,749 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:56:24,761 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:56:29,779 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:56:32,553 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:56:32,553 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:56:33,368 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: resume
+2024-06-06 19:56:33,368 INFO    HandlerThread:47457 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-06 19:56:33,368 INFO    HandlerThread:47457 [system_monitor.py:start():194] Starting system monitor
+2024-06-06 19:56:33,368 INFO    SystemMonitor:47457 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-06 19:56:33,368 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started cpu monitoring
+2024-06-06 19:56:33,368 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started disk monitoring
+2024-06-06 19:56:33,370 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-06 19:56:33,371 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started memory monitoring
+2024-06-06 19:56:33,371 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started network monitoring
+2024-06-06 19:56:33,416 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: pause
+2024-06-06 19:56:33,416 INFO    HandlerThread:47457 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-06 19:56:33,416 INFO    HandlerThread:47457 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-06 19:56:33,417 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-06 19:56:33,417 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-06 19:56:33,417 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined disk monitor
+2024-06-06 19:56:33,417 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-06 19:56:33,417 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-06 19:56:33,727 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-06 19:56:33,727 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined memory monitor
+2024-06-06 19:56:33,727 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined network monitor
+2024-06-06 19:56:33,727 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:56:34,656 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:56:35,150 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: resume
+2024-06-06 19:56:35,150 INFO    HandlerThread:47457 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-06 19:56:35,150 INFO    HandlerThread:47457 [system_monitor.py:start():194] Starting system monitor
+2024-06-06 19:56:35,150 INFO    SystemMonitor:47457 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-06 19:56:35,151 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started cpu monitoring
+2024-06-06 19:56:35,151 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started disk monitoring
+2024-06-06 19:56:35,151 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-06 19:56:35,155 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started memory monitoring
+2024-06-06 19:56:35,156 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started network monitoring
+2024-06-06 19:56:35,254 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: pause
+2024-06-06 19:56:35,254 INFO    HandlerThread:47457 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-06 19:56:35,254 INFO    HandlerThread:47457 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-06 19:56:35,254 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-06 19:56:35,254 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-06 19:56:35,254 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-06 19:56:35,254 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined disk monitor
+2024-06-06 19:56:35,254 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-06 19:56:35,489 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-06 19:56:35,489 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined memory monitor
+2024-06-06 19:56:35,489 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined network monitor
+2024-06-06 19:56:35,490 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:56:35,490 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:56:36,664 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:56:40,507 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:56:45,528 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:56:47,555 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:56:47,555 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:56:50,878 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:56:55,899 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:57:00,918 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:57:02,556 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:57:02,558 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:57:06,731 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:57:11,747 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:57:16,762 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:57:17,561 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:57:17,562 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:57:21,765 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:57:26,785 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:57:29,090 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: resume
+2024-06-06 19:57:29,090 INFO    HandlerThread:47457 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-06 19:57:29,090 INFO    HandlerThread:47457 [system_monitor.py:start():194] Starting system monitor
+2024-06-06 19:57:29,090 INFO    SystemMonitor:47457 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-06 19:57:29,090 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started cpu monitoring
+2024-06-06 19:57:29,090 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started disk monitoring
+2024-06-06 19:57:29,093 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-06 19:57:29,094 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: pause
+2024-06-06 19:57:29,094 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started memory monitoring
+2024-06-06 19:57:29,094 INFO    HandlerThread:47457 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-06 19:57:29,094 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started network monitoring
+2024-06-06 19:57:29,094 INFO    HandlerThread:47457 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-06 19:57:29,095 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-06 19:57:29,095 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-06 19:57:29,095 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined disk monitor
+2024-06-06 19:57:29,095 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-06 19:57:29,095 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-06 19:57:29,339 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-06 19:57:29,339 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined memory monitor
+2024-06-06 19:57:29,339 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined network monitor
+2024-06-06 19:57:29,340 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:57:32,354 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:57:32,565 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:57:32,565 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:57:37,822 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:57:42,840 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:57:43,616 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: resume
+2024-06-06 19:57:43,616 INFO    HandlerThread:47457 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-06 19:57:43,616 INFO    HandlerThread:47457 [system_monitor.py:start():194] Starting system monitor
+2024-06-06 19:57:43,616 INFO    SystemMonitor:47457 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-06 19:57:43,617 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started cpu monitoring
+2024-06-06 19:57:43,617 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started disk monitoring
+2024-06-06 19:57:43,623 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-06 19:57:43,624 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started memory monitoring
+2024-06-06 19:57:43,624 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started network monitoring
+2024-06-06 19:57:43,625 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: pause
+2024-06-06 19:57:43,625 INFO    HandlerThread:47457 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-06 19:57:43,625 INFO    HandlerThread:47457 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-06 19:57:43,626 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-06 19:57:43,626 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-06 19:57:43,626 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-06 19:57:43,626 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-06 19:57:43,626 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined disk monitor
+2024-06-06 19:57:43,888 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-06 19:57:43,888 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined memory monitor
+2024-06-06 19:57:43,888 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined network monitor
+2024-06-06 19:57:43,889 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:57:47,305 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: resume
+2024-06-06 19:57:47,305 INFO    HandlerThread:47457 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-06 19:57:47,305 INFO    HandlerThread:47457 [system_monitor.py:start():194] Starting system monitor
+2024-06-06 19:57:47,305 INFO    SystemMonitor:47457 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-06 19:57:47,306 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started cpu monitoring
+2024-06-06 19:57:47,306 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started disk monitoring
+2024-06-06 19:57:47,307 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-06 19:57:47,310 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: pause
+2024-06-06 19:57:47,311 INFO    HandlerThread:47457 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-06 19:57:47,311 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started memory monitoring
+2024-06-06 19:57:47,311 INFO    HandlerThread:47457 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-06 19:57:47,312 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started network monitoring
+2024-06-06 19:57:47,312 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-06 19:57:47,312 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-06 19:57:47,312 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-06 19:57:47,312 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-06 19:57:47,312 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined disk monitor
+2024-06-06 19:57:47,627 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-06 19:57:47,627 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined memory monitor
+2024-06-06 19:57:47,627 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined network monitor
+2024-06-06 19:57:47,627 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:57:47,627 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:57:47,627 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:57:47,853 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: resume
+2024-06-06 19:57:47,853 INFO    HandlerThread:47457 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-06 19:57:47,853 INFO    HandlerThread:47457 [system_monitor.py:start():194] Starting system monitor
+2024-06-06 19:57:47,853 INFO    SystemMonitor:47457 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-06 19:57:47,853 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started cpu monitoring
+2024-06-06 19:57:47,853 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started disk monitoring
+2024-06-06 19:57:47,854 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-06 19:57:47,857 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started memory monitoring
+2024-06-06 19:57:47,859 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started network monitoring
+2024-06-06 19:57:47,859 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: pause
+2024-06-06 19:57:47,859 INFO    HandlerThread:47457 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-06 19:57:47,859 INFO    HandlerThread:47457 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-06 19:57:47,859 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-06 19:57:47,859 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-06 19:57:47,859 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-06 19:57:47,859 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-06 19:57:47,860 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined disk monitor
+2024-06-06 19:57:48,198 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-06 19:57:48,198 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined memory monitor
+2024-06-06 19:57:48,198 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined network monitor
+2024-06-06 19:57:48,199 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:57:48,199 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:57:50,170 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: resume
+2024-06-06 19:57:50,170 INFO    HandlerThread:47457 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-06 19:57:50,170 INFO    HandlerThread:47457 [system_monitor.py:start():194] Starting system monitor
+2024-06-06 19:57:50,170 INFO    SystemMonitor:47457 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-06 19:57:50,171 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started cpu monitoring
+2024-06-06 19:57:50,171 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started disk monitoring
+2024-06-06 19:57:50,171 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-06 19:57:50,177 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started memory monitoring
+2024-06-06 19:57:50,180 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: pause
+2024-06-06 19:57:50,180 INFO    HandlerThread:47457 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-06 19:57:50,180 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started network monitoring
+2024-06-06 19:57:50,180 INFO    HandlerThread:47457 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-06 19:57:50,181 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-06 19:57:50,181 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-06 19:57:50,181 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined disk monitor
+2024-06-06 19:57:50,181 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-06 19:57:50,181 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-06 19:57:50,440 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-06 19:57:50,441 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined memory monitor
+2024-06-06 19:57:50,441 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined network monitor
+2024-06-06 19:57:50,442 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:57:51,955 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:57:53,453 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:57:58,475 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:58:02,569 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:58:02,570 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:58:03,864 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:58:08,884 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:58:13,902 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:58:17,571 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:58:17,573 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:58:19,789 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:58:24,805 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:58:29,817 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:58:32,574 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-06 19:58:32,575 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: stop_status
+2024-06-06 19:58:35,805 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:58:40,823 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:58:45,845 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:58:46,428 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: resume
+2024-06-06 19:58:46,428 INFO    HandlerThread:47457 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-06 19:58:46,428 INFO    HandlerThread:47457 [system_monitor.py:start():194] Starting system monitor
+2024-06-06 19:58:46,428 INFO    SystemMonitor:47457 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-06 19:58:46,429 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started cpu monitoring
+2024-06-06 19:58:46,429 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started disk monitoring
+2024-06-06 19:58:46,429 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-06 19:58:46,430 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started memory monitoring
+2024-06-06 19:58:46,433 INFO    SystemMonitor:47457 [interfaces.py:start():188] Started network monitoring
+2024-06-06 19:58:46,440 DEBUG   SenderThread:47457 [sender.py:send():378] send: telemetry
+2024-06-06 19:58:46,441 DEBUG   SenderThread:47457 [sender.py:send():378] send: exit
+2024-06-06 19:58:46,441 INFO    SenderThread:47457 [sender.py:send_exit():585] handling exit code: 0
+2024-06-06 19:58:46,442 INFO    SenderThread:47457 [sender.py:send_exit():587] handling runtime: 477
+2024-06-06 19:58:46,442 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:58:46,442 INFO    SenderThread:47457 [sender.py:send_exit():593] send defer
+2024-06-06 19:58:46,443 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: defer
+2024-06-06 19:58:46,443 INFO    HandlerThread:47457 [handler.py:handle_request_defer():184] handle defer: 0
+2024-06-06 19:58:46,443 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: defer
+2024-06-06 19:58:46,443 INFO    SenderThread:47457 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-06-06 19:58:46,443 INFO    SenderThread:47457 [sender.py:transition_state():613] send defer: 1
+2024-06-06 19:58:46,443 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: defer
+2024-06-06 19:58:46,443 INFO    HandlerThread:47457 [handler.py:handle_request_defer():184] handle defer: 1
+2024-06-06 19:58:46,443 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: defer
+2024-06-06 19:58:46,443 INFO    SenderThread:47457 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-06-06 19:58:46,443 INFO    SenderThread:47457 [sender.py:transition_state():613] send defer: 2
+2024-06-06 19:58:46,443 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: defer
+2024-06-06 19:58:46,443 INFO    HandlerThread:47457 [handler.py:handle_request_defer():184] handle defer: 2
+2024-06-06 19:58:46,443 INFO    HandlerThread:47457 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-06 19:58:46,443 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-06 19:58:46,443 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-06 19:58:46,443 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-06 19:58:46,443 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined disk monitor
+2024-06-06 19:58:46,443 DEBUG   SystemMonitor:47457 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-06 19:58:46,720 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-06 19:58:46,720 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined memory monitor
+2024-06-06 19:58:46,721 INFO    HandlerThread:47457 [interfaces.py:finish():200] Joined network monitor
+2024-06-06 19:58:46,721 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: defer
+2024-06-06 19:58:46,721 INFO    SenderThread:47457 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-06-06 19:58:46,721 INFO    SenderThread:47457 [sender.py:transition_state():613] send defer: 3
+2024-06-06 19:58:46,721 DEBUG   SenderThread:47457 [sender.py:send():378] send: stats
+2024-06-06 19:58:46,721 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: defer
+2024-06-06 19:58:46,721 INFO    HandlerThread:47457 [handler.py:handle_request_defer():184] handle defer: 3
+2024-06-06 19:58:46,721 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: defer
+2024-06-06 19:58:46,721 INFO    SenderThread:47457 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-06-06 19:58:46,721 INFO    SenderThread:47457 [sender.py:transition_state():613] send defer: 4
+2024-06-06 19:58:46,721 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: defer
+2024-06-06 19:58:46,721 INFO    HandlerThread:47457 [handler.py:handle_request_defer():184] handle defer: 4
+2024-06-06 19:58:46,721 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: defer
+2024-06-06 19:58:46,721 INFO    SenderThread:47457 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-06-06 19:58:46,721 INFO    SenderThread:47457 [sender.py:transition_state():613] send defer: 5
+2024-06-06 19:58:46,721 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: defer
+2024-06-06 19:58:46,721 INFO    HandlerThread:47457 [handler.py:handle_request_defer():184] handle defer: 5
+2024-06-06 19:58:46,721 DEBUG   SenderThread:47457 [sender.py:send():378] send: summary
+2024-06-06 19:58:46,721 INFO    SenderThread:47457 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-06 19:58:46,722 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: defer
+2024-06-06 19:58:46,722 INFO    SenderThread:47457 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-06-06 19:58:46,722 INFO    SenderThread:47457 [sender.py:transition_state():613] send defer: 6
+2024-06-06 19:58:46,722 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: defer
+2024-06-06 19:58:46,722 INFO    HandlerThread:47457 [handler.py:handle_request_defer():184] handle defer: 6
+2024-06-06 19:58:46,722 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: defer
+2024-06-06 19:58:46,722 INFO    SenderThread:47457 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-06-06 19:58:46,723 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: status_report
+2024-06-06 19:58:46,927 INFO    SenderThread:47457 [sender.py:transition_state():613] send defer: 7
+2024-06-06 19:58:46,927 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: defer
+2024-06-06 19:58:46,927 INFO    HandlerThread:47457 [handler.py:handle_request_defer():184] handle defer: 7
+2024-06-06 19:58:46,927 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: defer
+2024-06-06 19:58:46,927 INFO    SenderThread:47457 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-06-06 19:58:47,191 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:58:47,191 INFO    Thread-12 :47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/config.yaml
+2024-06-06 19:58:47,442 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-06 19:58:49,970 INFO    SenderThread:47457 [sender.py:transition_state():613] send defer: 8
+2024-06-06 19:58:49,971 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: poll_exit
+2024-06-06 19:58:49,971 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: defer
+2024-06-06 19:58:49,971 INFO    HandlerThread:47457 [handler.py:handle_request_defer():184] handle defer: 8
+2024-06-06 19:58:49,971 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: defer
+2024-06-06 19:58:49,971 INFO    SenderThread:47457 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-06-06 19:58:49,971 INFO    SenderThread:47457 [job_builder.py:build():432] Attempting to build job artifact
+2024-06-06 19:58:49,972 INFO    SenderThread:47457 [job_builder.py:_get_source_type():565] is repo sourced job
+2024-06-06 19:58:49,972 INFO    SenderThread:47457 [job_builder.py:_get_program_relpath():583] run is notebook based run
+2024-06-06 19:58:49,972 WARNING SenderThread:47457 [job_builder.py:_log_if_verbose():267] Source type is set to 'repo' but some required information is missing from the environment. A job will not be created from this run. See https://docs.wandb.ai/guides/launch/create-job
+2024-06-06 19:58:49,972 INFO    SenderThread:47457 [sender.py:transition_state():613] send defer: 9
+2024-06-06 19:58:49,972 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: defer
+2024-06-06 19:58:49,972 INFO    HandlerThread:47457 [handler.py:handle_request_defer():184] handle defer: 9
+2024-06-06 19:58:49,973 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: defer
+2024-06-06 19:58:49,973 INFO    SenderThread:47457 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-06-06 19:58:49,973 INFO    SenderThread:47457 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-06-06 19:58:50,202 INFO    SenderThread:47457 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:58:50,202 INFO    SenderThread:47457 [dir_watcher.py:finish():388] scan: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files
+2024-06-06 19:58:50,203 INFO    SenderThread:47457 [dir_watcher.py:finish():402] scan save: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/requirements.txt requirements.txt
+2024-06-06 19:58:50,203 INFO    SenderThread:47457 [dir_watcher.py:finish():402] scan save: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log output.log
+2024-06-06 19:58:50,203 INFO    SenderThread:47457 [dir_watcher.py:finish():402] scan save: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/config.yaml config.yaml
+2024-06-06 19:58:50,205 INFO    SenderThread:47457 [dir_watcher.py:finish():402] scan save: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json wandb-summary.json
+2024-06-06 19:58:50,207 INFO    SenderThread:47457 [dir_watcher.py:finish():402] scan save: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-metadata.json wandb-metadata.json
+2024-06-06 19:58:50,207 INFO    SenderThread:47457 [sender.py:transition_state():613] send defer: 10
+2024-06-06 19:58:50,208 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: defer
+2024-06-06 19:58:50,208 INFO    HandlerThread:47457 [handler.py:handle_request_defer():184] handle defer: 10
+2024-06-06 19:58:50,209 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: defer
+2024-06-06 19:58:50,209 INFO    SenderThread:47457 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-06-06 19:58:50,209 INFO    SenderThread:47457 [file_pusher.py:finish():169] shutting down file pusher
+2024-06-06 19:58:50,455 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-06 19:58:50,455 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: poll_exit
+2024-06-06 19:58:50,635 INFO    wandb-upload_3:47457 [upload_job.py:push():130] Uploaded file /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/wandb-summary.json
+2024-06-06 19:58:50,661 INFO    wandb-upload_2:47457 [upload_job.py:push():130] Uploaded file /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/config.yaml
+2024-06-06 19:58:50,661 INFO    wandb-upload_1:47457 [upload_job.py:push():130] Uploaded file /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/output.log
+2024-06-06 19:58:50,662 INFO    wandb-upload_0:47457 [upload_job.py:push():130] Uploaded file /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/files/requirements.txt
+2024-06-06 19:58:50,867 INFO    Thread-11 (_thread_body):47457 [sender.py:transition_state():613] send defer: 11
+2024-06-06 19:58:50,867 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: defer
+2024-06-06 19:58:50,867 INFO    HandlerThread:47457 [handler.py:handle_request_defer():184] handle defer: 11
+2024-06-06 19:58:50,867 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: defer
+2024-06-06 19:58:50,867 INFO    SenderThread:47457 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-06-06 19:58:50,867 INFO    SenderThread:47457 [file_pusher.py:join():175] waiting for file pusher
+2024-06-06 19:58:50,868 INFO    SenderThread:47457 [sender.py:transition_state():613] send defer: 12
+2024-06-06 19:58:50,868 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: defer
+2024-06-06 19:58:50,868 INFO    HandlerThread:47457 [handler.py:handle_request_defer():184] handle defer: 12
+2024-06-06 19:58:50,869 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: defer
+2024-06-06 19:58:50,869 INFO    SenderThread:47457 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-06-06 19:58:50,869 INFO    SenderThread:47457 [file_stream.py:finish():601] file stream finish called
+2024-06-06 19:58:51,423 INFO    SenderThread:47457 [file_stream.py:finish():605] file stream finish is done
+2024-06-06 19:58:51,423 INFO    SenderThread:47457 [sender.py:transition_state():613] send defer: 13
+2024-06-06 19:58:51,424 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: defer
+2024-06-06 19:58:51,424 INFO    HandlerThread:47457 [handler.py:handle_request_defer():184] handle defer: 13
+2024-06-06 19:58:51,424 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: defer
+2024-06-06 19:58:51,424 INFO    SenderThread:47457 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-06-06 19:58:51,424 INFO    SenderThread:47457 [sender.py:transition_state():613] send defer: 14
+2024-06-06 19:58:51,425 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: defer
+2024-06-06 19:58:51,425 DEBUG   SenderThread:47457 [sender.py:send():378] send: final
+2024-06-06 19:58:51,425 INFO    HandlerThread:47457 [handler.py:handle_request_defer():184] handle defer: 14
+2024-06-06 19:58:51,425 DEBUG   SenderThread:47457 [sender.py:send():378] send: footer
+2024-06-06 19:58:51,425 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: defer
+2024-06-06 19:58:51,425 INFO    SenderThread:47457 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-06-06 19:58:51,426 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-06 19:58:51,426 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: poll_exit
+2024-06-06 19:58:51,427 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-06 19:58:51,427 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: server_info
+2024-06-06 19:58:51,427 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: get_summary
+2024-06-06 19:58:51,428 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: sampled_history
+2024-06-06 19:58:51,428 DEBUG   SenderThread:47457 [sender.py:send_request():405] send_request: server_info
+2024-06-06 19:58:51,646 DEBUG   HandlerThread:47457 [handler.py:handle_request():158] handle_request: shutdown
+2024-06-06 19:58:51,647 INFO    HandlerThread:47457 [handler.py:finish():882] shutting down handler
+2024-06-06 19:58:52,431 INFO    WriterThread:47457 [datastore.py:close():296] close: /Users/mariayuffa/semester-project-1/wandb/run-20240606_194116-wgpx801e/run-wgpx801e.wandb
+2024-06-06 19:58:52,648 INFO    SenderThread:47457 [sender.py:finish():1545] shutting down sender
+2024-06-06 19:58:52,648 INFO    SenderThread:47457 [file_pusher.py:finish():169] shutting down file pusher
+2024-06-06 19:58:52,648 INFO    SenderThread:47457 [file_pusher.py:join():175] waiting for file pusher

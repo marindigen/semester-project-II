@@ -1,0 +1,730 @@
+2024-06-07 15:31:54,820 INFO    StreamThr :71223 [internal.py:wandb_internal():85] W&B internal server running at pid: 71223, started at: 2024-06-07 15:31:54.818232
+2024-06-07 15:31:54,821 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status
+2024-06-07 15:31:54,822 INFO    WriterThread:71223 [datastore.py:open_for_write():87] open: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/run-dkemra1l.wandb
+2024-06-07 15:31:54,823 DEBUG   SenderThread:71223 [sender.py:send():378] send: header
+2024-06-07 15:31:54,823 DEBUG   SenderThread:71223 [sender.py:send():378] send: run
+2024-06-07 15:31:55,253 INFO    SenderThread:71223 [dir_watcher.py:__init__():211] watching files in: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files
+2024-06-07 15:31:55,253 INFO    SenderThread:71223 [sender.py:_start_run_threads():1123] run started: dkemra1l with start time 1717767113.863283
+2024-06-07 15:31:55,259 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: check_version
+2024-06-07 15:31:55,259 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: check_version
+2024-06-07 15:31:55,340 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: run_start
+2024-06-07 15:31:55,341 DEBUG   HandlerThread:71223 [system_info.py:__init__():26] System info init
+2024-06-07 15:31:55,341 DEBUG   HandlerThread:71223 [system_info.py:__init__():41] System info init done
+2024-06-07 15:31:55,341 INFO    HandlerThread:71223 [system_monitor.py:start():194] Starting system monitor
+2024-06-07 15:31:55,341 INFO    SystemMonitor:71223 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-07 15:31:55,341 INFO    HandlerThread:71223 [system_monitor.py:probe():214] Collecting system info
+2024-06-07 15:31:55,341 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started cpu monitoring
+2024-06-07 15:31:55,342 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started disk monitoring
+2024-06-07 15:31:55,345 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-07 15:31:55,346 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started memory monitoring
+2024-06-07 15:31:55,349 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started network monitoring
+2024-06-07 15:31:55,684 DEBUG   HandlerThread:71223 [system_info.py:probe():150] Probing system
+2024-06-07 15:31:55,684 DEBUG   HandlerThread:71223 [system_info.py:_probe_git():135] Probing git
+2024-06-07 15:31:55,697 DEBUG   HandlerThread:71223 [system_info.py:_probe_git():143] Probing git done
+2024-06-07 15:31:55,697 DEBUG   HandlerThread:71223 [system_info.py:probe():198] Probing system done
+2024-06-07 15:31:55,697 DEBUG   HandlerThread:71223 [system_monitor.py:probe():223] {'os': 'macOS-14.4.1-arm64-arm-64bit', 'python': '3.12.3', 'heartbeatAt': '2024-06-07T13:31:55.684222', 'startedAt': '2024-06-07T13:31:49.015122', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'https://github.com/marindigen/semester-project.git', 'commit': '6cde453ddb3c3b3cf5e84f7cad8b19f6f1a84fce'}, 'email': 'mariia.iuffa@gmail.com', 'root': '/Users/mariayuffa/semester-project-1', 'host': 'eduroam-269-1-061.epfl.ch', 'username': 'mariayuffa', 'executable': '/Users/mariayuffa/semester-project-1/.venv/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'cpu_freq': {'current': 3504, 'min': 702, 'max': 3504}, 'cpu_freq_per_core': [{'current': 3504, 'min': 702, 'max': 3504}], 'disk': {'/': {'total': 460.4317207336426, 'used': 12.54928970336914}}, 'gpuapple': {'type': 'Apple M2 Pro', 'vendor': 'sppci_vendor_Apple'}, 'memory': {'total': 16.0}}
+2024-06-07 15:31:55,697 INFO    HandlerThread:71223 [system_monitor.py:probe():224] Finished collecting system info
+2024-06-07 15:31:55,697 INFO    HandlerThread:71223 [system_monitor.py:probe():227] Publishing system info
+2024-06-07 15:31:55,698 INFO    HandlerThread:71223 [system_monitor.py:probe():229] Finished publishing system info
+2024-06-07 15:31:55,698 DEBUG   SenderThread:71223 [sender.py:send():378] send: files
+2024-06-07 15:31:55,698 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-metadata.json with policy now
+2024-06-07 15:31:55,745 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: python_packages
+2024-06-07 15:31:55,745 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: python_packages
+2024-06-07 15:31:55,745 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:31:55,745 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:31:55,747 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: pause
+2024-06-07 15:31:55,747 INFO    HandlerThread:71223 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-07 15:31:55,747 INFO    HandlerThread:71223 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-07 15:31:55,747 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-07 15:31:55,747 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-07 15:31:55,747 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-07 15:31:55,747 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined disk monitor
+2024-06-07 15:31:55,747 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-07 15:31:55,747 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-07 15:31:55,748 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined memory monitor
+2024-06-07 15:31:55,748 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined network monitor
+2024-06-07 15:31:55,751 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: resume
+2024-06-07 15:31:55,751 INFO    HandlerThread:71223 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-07 15:31:55,751 INFO    HandlerThread:71223 [system_monitor.py:start():194] Starting system monitor
+2024-06-07 15:31:55,752 INFO    SystemMonitor:71223 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-07 15:31:55,752 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started cpu monitoring
+2024-06-07 15:31:55,752 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started disk monitoring
+2024-06-07 15:31:55,753 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-07 15:31:55,755 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started memory monitoring
+2024-06-07 15:31:55,756 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started network monitoring
+2024-06-07 15:31:55,964 DEBUG   SenderThread:71223 [sender.py:send():378] send: telemetry
+2024-06-07 15:31:55,964 DEBUG   SenderThread:71223 [sender.py:send():378] send: telemetry
+2024-06-07 15:31:55,964 DEBUG   SenderThread:71223 [sender.py:send():378] send: stats
+2024-06-07 15:31:56,257 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:31:56,257 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/requirements.txt
+2024-06-07 15:31:56,257 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-metadata.json
+2024-06-07 15:31:56,326 INFO    wandb-upload_0:71223 [upload_job.py:push():130] Uploaded file /var/folders/mg/44g5ch495hdc8x4_5mq3dsdm0000gn/T/tmpqdw6w9jdwandb/ikwoi17r-wandb-metadata.json
+2024-06-07 15:31:58,267 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:31:59,880 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:32:00,273 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:00,283 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:32:00,284 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:32:00,284 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:32:00,284 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:32:01,279 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:01,279 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:32:02,283 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:04,290 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:04,970 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:32:05,077 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:32:05,077 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:32:05,077 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:32:05,078 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:32:05,295 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:05,296 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:32:06,300 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:07,302 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:08,307 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:09,313 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:09,585 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:32:09,586 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:32:09,586 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:32:09,586 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:32:10,058 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:32:10,313 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:10,313 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:32:10,749 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:32:10,749 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:32:11,318 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:12,323 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:14,335 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:14,752 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:32:14,753 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:32:14,753 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:32:14,753 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:32:15,151 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:32:15,338 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:15,338 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:32:16,338 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:17,340 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:18,345 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:19,320 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:32:19,321 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:32:19,321 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:32:19,321 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:32:19,346 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:19,347 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:32:20,204 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:32:20,349 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:21,354 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:22,360 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:23,364 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:24,059 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:32:24,059 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:32:24,059 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:32:24,059 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:32:24,369 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:24,369 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:32:25,373 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:25,391 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:32:25,750 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:32:25,751 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:32:26,379 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:26,379 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/config.yaml
+2024-06-07 15:32:28,386 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:28,691 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:32:28,692 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:32:28,692 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:32:28,692 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:32:29,388 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:29,389 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:32:30,394 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:30,610 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:32:32,398 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:33,381 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:32:33,382 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:32:33,382 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:32:33,382 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:32:33,401 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:33,402 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:32:34,407 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:35,412 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:35,760 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:32:36,417 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:37,422 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:37,894 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:32:37,895 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:32:37,895 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:32:37,895 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:32:38,427 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:38,428 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:32:39,430 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:40,435 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:40,755 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:32:40,755 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:32:40,959 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:32:42,442 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:42,564 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:32:42,564 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:32:42,564 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:32:42,565 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:32:43,448 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:43,448 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:32:44,453 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:45,989 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:32:46,462 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:46,812 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:32:46,813 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:32:46,813 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:32:46,813 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:32:47,468 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:47,468 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:32:48,473 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:50,483 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:50,986 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:32:50,986 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:32:50,986 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:32:50,987 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:32:50,997 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:32:51,488 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:51,488 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:32:52,494 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:54,504 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:55,247 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:32:55,248 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:32:55,248 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:32:55,248 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:32:55,509 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:55,509 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:32:55,760 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:32:55,761 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:32:55,761 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-07 15:32:55,972 DEBUG   SenderThread:71223 [sender.py:send():378] send: stats
+2024-06-07 15:32:56,163 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:32:56,515 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:57,520 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:58,525 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:59,433 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:32:59,433 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:32:59,433 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:32:59,434 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:32:59,530 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:32:59,530 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:33:00,535 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:01,345 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:33:01,536 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:02,542 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:03,545 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:03,976 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:33:03,976 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:33:03,976 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:33:03,977 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:33:04,550 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:04,550 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:33:05,555 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:06,510 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:33:06,560 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:07,566 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:08,307 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:33:08,307 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:33:08,307 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:33:08,308 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:33:08,571 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:08,571 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:33:09,576 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:10,581 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:10,765 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:33:10,766 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:33:11,533 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:33:12,516 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:33:12,516 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:33:12,516 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:33:12,517 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:33:12,587 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:12,587 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:33:13,592 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:14,597 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:16,552 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:33:16,604 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:16,754 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:33:16,754 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:33:16,754 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:33:16,755 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:33:17,605 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:17,605 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:33:18,610 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:20,620 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:20,939 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:33:20,940 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:33:20,940 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:33:20,940 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:33:21,585 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:33:21,626 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:21,626 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:33:22,629 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:24,638 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:25,412 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:33:25,413 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:33:25,413 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:33:25,413 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:33:25,643 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:25,643 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:33:25,762 DEBUG   SenderThread:71223 [sender.py:send():378] send: stats
+2024-06-07 15:33:25,770 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:33:25,770 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:33:26,590 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:33:26,648 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:27,654 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:28,656 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:29,632 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:33:29,633 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:33:29,633 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:33:29,633 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:33:29,659 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:29,659 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:33:30,664 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:31,670 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:31,732 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:33:32,675 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:33,680 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:33,806 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:33:33,807 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:33:33,807 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:33:33,807 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:33:34,684 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:34,684 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:33:35,689 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:36,694 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:36,809 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:33:37,699 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:38,044 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:33:38,044 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:33:38,044 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:33:38,045 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:33:38,705 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:38,705 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:33:39,710 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:40,715 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:40,775 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:33:40,775 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:33:41,856 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:33:42,267 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:33:42,267 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:33:42,268 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:33:42,268 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:33:42,725 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:42,725 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:33:43,730 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:44,736 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:46,744 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:46,873 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:33:46,936 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:33:46,936 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:33:46,937 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:33:46,937 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:33:47,749 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:47,749 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:33:48,754 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:50,761 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:51,495 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:33:51,496 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:33:51,496 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:33:51,496 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:33:51,766 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:51,766 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:33:51,917 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:33:52,771 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:53,776 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:54,782 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:55,686 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:33:55,687 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:33:55,687 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:33:55,687 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:33:55,767 DEBUG   SenderThread:71223 [sender.py:send():378] send: stats
+2024-06-07 15:33:55,776 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:33:55,776 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:33:55,783 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:55,783 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:33:56,788 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:56,967 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:33:57,793 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:58,798 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:59,804 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:33:59,903 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:33:59,903 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:33:59,903 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:33:59,903 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:34:00,804 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:00,804 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:34:01,810 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:02,100 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:34:02,813 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:03,818 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:04,029 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:34:04,029 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:34:04,029 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:34:04,029 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:34:04,824 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:04,824 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:34:05,829 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:06,836 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:07,116 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:34:08,535 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:34:08,536 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:34:08,536 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:34:08,536 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:34:08,849 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:08,849 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:34:09,855 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:10,787 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:34:10,788 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:34:10,861 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:12,145 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:34:12,700 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:34:12,700 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:34:12,701 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:34:12,701 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:34:12,873 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:12,874 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:34:13,879 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:14,885 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:16,897 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:17,240 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:34:17,334 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:34:17,334 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:34:17,334 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:34:17,335 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:34:17,899 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:17,899 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:34:18,905 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:19,910 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:20,916 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:21,447 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:34:21,447 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:34:21,448 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:34:21,448 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:34:21,921 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:21,921 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:34:22,274 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:34:22,923 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:23,929 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:24,934 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:25,542 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:34:25,542 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:34:25,542 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:34:25,542 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:34:25,786 DEBUG   SenderThread:71223 [sender.py:send():378] send: stats
+2024-06-07 15:34:25,801 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:34:25,801 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:34:25,940 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:25,940 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:34:26,945 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:27,372 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:34:27,951 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:28,957 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:29,818 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:34:29,818 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:34:29,818 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:34:29,819 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:34:29,962 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:29,962 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:34:30,968 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:31,973 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:32,539 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:34:32,979 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:33,960 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:34:33,960 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:34:33,960 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:34:33,960 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:34:33,984 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:33,984 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:34:34,989 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:35,995 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:37,000 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:37,569 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:34:38,005 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:38,144 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:34:38,144 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:34:38,144 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:34:38,145 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:34:39,010 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:39,011 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:34:40,016 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:40,810 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:34:40,810 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:34:41,021 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:42,026 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:42,301 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:34:42,302 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:34:42,302 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:34:42,302 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:34:42,642 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:34:43,031 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:43,032 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:34:44,037 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:45,042 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:46,044 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:46,425 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:34:46,426 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:34:46,426 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:34:46,426 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:34:47,049 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:47,050 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:34:47,799 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:34:48,054 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:49,060 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:50,736 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:34:50,737 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:34:50,737 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:34:50,738 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:34:51,069 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:51,069 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:34:52,074 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:52,851 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:34:53,076 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:55,084 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:55,200 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:34:55,201 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:34:55,201 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:34:55,201 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:34:55,797 DEBUG   SenderThread:71223 [sender.py:send():378] send: stats
+2024-06-07 15:34:55,816 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:34:55,816 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:34:56,085 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:56,085 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:34:57,089 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:57,982 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:34:58,095 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:59,100 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:34:59,476 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:34:59,476 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:34:59,476 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:34:59,476 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:35:00,101 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:00,101 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:35:01,106 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:02,111 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:03,023 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:35:03,116 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:03,829 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:35:03,829 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:35:03,830 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:35:03,830 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:35:04,122 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:04,122 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:35:05,127 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:06,130 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:07,136 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:07,958 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:35:07,958 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:35:07,958 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:35:07,958 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:35:08,074 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:35:08,141 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:08,141 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:35:09,146 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:10,152 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:10,821 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:35:10,821 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:35:11,157 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:12,162 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:12,269 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:35:12,269 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:35:12,269 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:35:12,270 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:35:13,167 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:13,168 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:35:13,219 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:35:14,171 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:15,172 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:16,177 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:16,358 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:35:16,359 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:35:16,359 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:35:16,359 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:35:17,178 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:17,178 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:35:18,180 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:18,265 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:35:19,185 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:20,925 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:35:20,925 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:35:20,925 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:35:20,926 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:35:21,194 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:21,195 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:35:22,200 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:23,205 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:23,284 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:35:25,215 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:25,571 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:35:25,572 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:35:25,572 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:35:25,572 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:35:25,802 DEBUG   SenderThread:71223 [sender.py:send():378] send: stats
+2024-06-07 15:35:25,827 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:35:25,827 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:35:26,220 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:26,220 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:35:27,225 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:28,230 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:28,448 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:35:29,235 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:30,094 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:35:30,094 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:35:30,094 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:35:30,095 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:35:30,240 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:30,240 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:35:31,243 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:32,247 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:33,248 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:33,452 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:35:34,227 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:35:34,228 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:35:34,228 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:35:34,228 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:35:34,253 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:34,253 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/wandb-summary.json
+2024-06-07 15:35:34,256 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: pause
+2024-06-07 15:35:34,256 INFO    HandlerThread:71223 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-07 15:35:34,256 INFO    HandlerThread:71223 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-07 15:35:34,256 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-07 15:35:34,256 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-07 15:35:34,256 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-07 15:35:34,256 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined disk monitor
+2024-06-07 15:35:34,257 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-07 15:35:34,257 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined memory monitor
+2024-06-07 15:35:34,257 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined network monitor
+2024-06-07 15:35:34,257 DEBUG   SenderThread:71223 [sender.py:send():378] send: stats
+2024-06-07 15:35:35,259 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:36,264 INFO    Thread-48 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_153149-dkemra1l/files/output.log
+2024-06-07 15:35:39,274 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:35:40,832 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:35:40,833 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:35:44,991 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:35:50,009 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:35:55,028 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:35:55,834 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:35:55,835 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:36:00,153 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:36:05,173 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:36:10,190 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:36:10,836 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:36:10,837 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:36:16,029 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:36:21,054 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:36:25,840 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:36:25,841 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:36:27,056 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:36:32,070 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:36:37,087 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:36:40,846 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:36:40,847 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:36:43,032 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:36:48,053 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:36:53,078 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:36:55,850 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:36:55,851 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:36:58,110 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:37:03,130 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:37:08,145 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:37:10,854 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:37:10,855 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:37:14,058 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:37:19,075 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:37:24,094 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:37:25,861 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:37:25,861 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:37:30,056 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:37:35,074 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:37:40,094 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:37:40,862 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:37:40,862 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:37:46,053 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:37:51,070 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:37:55,867 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:37:55,867 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:37:57,057 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:38:02,072 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:38:07,092 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:38:10,872 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:38:10,873 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:38:12,124 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:38:17,141 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:38:22,157 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:38:25,877 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:38:25,878 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:38:28,136 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:38:33,153 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:38:38,176 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:38:40,882 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:38:40,883 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:38:44,098 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:38:49,118 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:38:54,133 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:38:55,883 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:38:55,883 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:39:00,081 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:39:05,099 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:39:10,112 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:39:10,888 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:39:10,888 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:39:16,100 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:39:21,114 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:39:25,891 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:39:25,892 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:39:27,066 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:39:32,079 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:39:37,092 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:39:40,894 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:39:40,895 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:39:43,056 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:39:48,078 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:39:53,092 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:39:55,897 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:39:55,897 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:39:58,172 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:40:03,190 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:40:08,202 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:40:10,900 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:40:10,902 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:40:14,156 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:40:19,169 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:40:24,188 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:40:25,902 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:40:25,902 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:40:30,163 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:40:35,183 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:40:40,205 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:40:40,904 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:40:40,905 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:40:46,068 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:40:51,088 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:40:55,906 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:40:55,907 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:40:56,091 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:41:01,110 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:41:06,126 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:41:10,911 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:41:10,913 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:41:11,166 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:41:16,186 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:41:21,200 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:41:25,914 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:41:25,916 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:41:26,279 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:41:31,297 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:41:36,316 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:41:40,915 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:41:40,916 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:41:42,165 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:41:47,176 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:41:52,195 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:41:55,922 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:41:55,922 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:41:58,189 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:42:03,201 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:42:08,219 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:42:10,925 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:42:10,925 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:42:14,195 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:42:19,207 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:42:24,215 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:42:25,932 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:42:25,932 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status

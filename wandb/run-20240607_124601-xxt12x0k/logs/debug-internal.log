@@ -1,0 +1,337 @@
+2024-06-07 12:46:01,602 INFO    StreamThr :63059 [internal.py:wandb_internal():85] W&B internal server running at pid: 63059, started at: 2024-06-07 12:46:01.601561
+2024-06-07 12:46:01,604 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: status
+2024-06-07 12:46:01,607 INFO    WriterThread:63059 [datastore.py:open_for_write():87] open: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/run-xxt12x0k.wandb
+2024-06-07 12:46:01,608 DEBUG   SenderThread:63059 [sender.py:send():378] send: header
+2024-06-07 12:46:01,646 DEBUG   SenderThread:63059 [sender.py:send():378] send: run
+2024-06-07 12:46:02,029 INFO    SenderThread:63059 [dir_watcher.py:__init__():211] watching files in: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files
+2024-06-07 12:46:02,030 INFO    SenderThread:63059 [sender.py:_start_run_threads():1123] run started: xxt12x0k with start time 1717757161.602918
+2024-06-07 12:46:02,042 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: check_version
+2024-06-07 12:46:02,043 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: check_version
+2024-06-07 12:46:02,134 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: run_start
+2024-06-07 12:46:02,144 DEBUG   HandlerThread:63059 [system_info.py:__init__():26] System info init
+2024-06-07 12:46:02,145 DEBUG   HandlerThread:63059 [system_info.py:__init__():41] System info init done
+2024-06-07 12:46:02,145 INFO    HandlerThread:63059 [system_monitor.py:start():194] Starting system monitor
+2024-06-07 12:46:02,145 INFO    SystemMonitor:63059 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-07 12:46:02,145 INFO    HandlerThread:63059 [system_monitor.py:probe():214] Collecting system info
+2024-06-07 12:46:02,146 INFO    SystemMonitor:63059 [interfaces.py:start():188] Started cpu monitoring
+2024-06-07 12:46:02,149 INFO    SystemMonitor:63059 [interfaces.py:start():188] Started disk monitoring
+2024-06-07 12:46:02,153 INFO    SystemMonitor:63059 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-07 12:46:02,155 INFO    SystemMonitor:63059 [interfaces.py:start():188] Started memory monitoring
+2024-06-07 12:46:02,155 INFO    SystemMonitor:63059 [interfaces.py:start():188] Started network monitoring
+2024-06-07 12:46:02,496 DEBUG   HandlerThread:63059 [system_info.py:probe():150] Probing system
+2024-06-07 12:46:02,499 DEBUG   HandlerThread:63059 [system_info.py:_probe_git():135] Probing git
+2024-06-07 12:46:02,510 DEBUG   HandlerThread:63059 [system_info.py:_probe_git():143] Probing git done
+2024-06-07 12:46:02,510 DEBUG   HandlerThread:63059 [system_info.py:probe():198] Probing system done
+2024-06-07 12:46:02,510 DEBUG   HandlerThread:63059 [system_monitor.py:probe():223] {'os': 'macOS-14.4.1-arm64-arm-64bit', 'python': '3.12.3', 'heartbeatAt': '2024-06-07T10:46:02.496885', 'startedAt': '2024-06-07T10:46:01.592523', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'https://github.com/marindigen/semester-project.git', 'commit': '6cde453ddb3c3b3cf5e84f7cad8b19f6f1a84fce'}, 'email': 'mariia.iuffa@gmail.com', 'root': '/Users/mariayuffa/semester-project-1', 'host': 'eduroam-269-1-061.epfl.ch', 'username': 'mariayuffa', 'executable': '/Users/mariayuffa/semester-project-1/.venv/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'cpu_freq': {'current': 3504, 'min': 702, 'max': 3504}, 'cpu_freq_per_core': [{'current': 3504, 'min': 702, 'max': 3504}], 'disk': {'/': {'total': 460.4317207336426, 'used': 12.54928970336914}}, 'gpuapple': {'type': 'Apple M2 Pro', 'vendor': 'sppci_vendor_Apple'}, 'memory': {'total': 16.0}}
+2024-06-07 12:46:02,510 INFO    HandlerThread:63059 [system_monitor.py:probe():224] Finished collecting system info
+2024-06-07 12:46:02,510 INFO    HandlerThread:63059 [system_monitor.py:probe():227] Publishing system info
+2024-06-07 12:46:02,511 INFO    HandlerThread:63059 [system_monitor.py:probe():229] Finished publishing system info
+2024-06-07 12:46:02,514 DEBUG   SenderThread:63059 [sender.py:send():378] send: files
+2024-06-07 12:46:02,514 INFO    SenderThread:63059 [sender.py:_save_file():1389] saving file wandb-metadata.json with policy now
+2024-06-07 12:46:02,559 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: python_packages
+2024-06-07 12:46:02,559 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: python_packages
+2024-06-07 12:46:02,559 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 12:46:02,560 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 12:46:02,562 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: pause
+2024-06-07 12:46:02,562 INFO    HandlerThread:63059 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-07 12:46:02,562 INFO    HandlerThread:63059 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-07 12:46:02,562 INFO    HandlerThread:63059 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-07 12:46:02,562 DEBUG   SystemMonitor:63059 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-07 12:46:02,562 INFO    HandlerThread:63059 [interfaces.py:finish():200] Joined disk monitor
+2024-06-07 12:46:02,562 DEBUG   SystemMonitor:63059 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-07 12:46:02,562 INFO    HandlerThread:63059 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-07 12:46:02,563 DEBUG   SystemMonitor:63059 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-07 12:46:02,563 INFO    HandlerThread:63059 [interfaces.py:finish():200] Joined memory monitor
+2024-06-07 12:46:02,563 INFO    HandlerThread:63059 [interfaces.py:finish():200] Joined network monitor
+2024-06-07 12:46:02,566 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: resume
+2024-06-07 12:46:02,566 INFO    HandlerThread:63059 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-07 12:46:02,566 INFO    HandlerThread:63059 [system_monitor.py:start():194] Starting system monitor
+2024-06-07 12:46:02,566 INFO    SystemMonitor:63059 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-07 12:46:02,566 INFO    SystemMonitor:63059 [interfaces.py:start():188] Started cpu monitoring
+2024-06-07 12:46:02,567 INFO    SystemMonitor:63059 [interfaces.py:start():188] Started disk monitoring
+2024-06-07 12:46:02,567 INFO    SystemMonitor:63059 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-07 12:46:02,567 INFO    SystemMonitor:63059 [interfaces.py:start():188] Started memory monitoring
+2024-06-07 12:46:02,570 INFO    SystemMonitor:63059 [interfaces.py:start():188] Started network monitoring
+2024-06-07 12:46:02,855 DEBUG   SenderThread:63059 [sender.py:send():378] send: telemetry
+2024-06-07 12:46:02,856 DEBUG   SenderThread:63059 [sender.py:send():378] send: telemetry
+2024-06-07 12:46:02,856 DEBUG   SenderThread:63059 [sender.py:send():378] send: stats
+2024-06-07 12:46:03,034 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:46:03,034 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/requirements.txt
+2024-06-07 12:46:03,034 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/wandb-metadata.json
+2024-06-07 12:46:03,188 INFO    wandb-upload_0:63059 [upload_job.py:push():130] Uploaded file /var/folders/mg/44g5ch495hdc8x4_5mq3dsdm0000gn/T/tmplgwus7agwandb/aelum2g3-wandb-metadata.json
+2024-06-07 12:46:05,040 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:46:06,699 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 12:46:07,048 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:46:08,231 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 12:46:08,232 DEBUG   SenderThread:63059 [sender.py:send():378] send: history
+2024-06-07 12:46:08,232 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 12:46:08,232 INFO    SenderThread:63059 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 12:46:09,058 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:46:09,059 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/wandb-summary.json
+2024-06-07 12:46:11,067 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:46:11,757 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 12:46:13,076 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:46:13,413 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 12:46:13,414 DEBUG   SenderThread:63059 [sender.py:send():378] send: history
+2024-06-07 12:46:13,414 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 12:46:13,414 INFO    SenderThread:63059 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 12:46:14,082 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/wandb-summary.json
+2024-06-07 12:46:15,087 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:46:16,757 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 12:46:17,098 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:46:17,565 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 12:46:17,565 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 12:46:18,396 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 12:46:18,396 DEBUG   SenderThread:63059 [sender.py:send():378] send: history
+2024-06-07 12:46:18,396 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 12:46:18,396 INFO    SenderThread:63059 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 12:46:19,108 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/wandb-summary.json
+2024-06-07 12:46:19,108 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:46:21,119 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:46:21,837 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 12:46:23,127 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:46:23,452 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 12:46:23,453 DEBUG   SenderThread:63059 [sender.py:send():378] send: history
+2024-06-07 12:46:23,453 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 12:46:23,453 INFO    SenderThread:63059 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 12:46:24,132 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/wandb-summary.json
+2024-06-07 12:46:25,137 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:46:26,849 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 12:46:27,148 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:46:28,345 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 12:46:28,345 DEBUG   SenderThread:63059 [sender.py:send():378] send: history
+2024-06-07 12:46:28,345 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 12:46:28,346 INFO    SenderThread:63059 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 12:46:29,154 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/wandb-summary.json
+2024-06-07 12:46:29,155 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:46:31,165 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:46:31,877 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 12:46:32,170 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/config.yaml
+2024-06-07 12:46:32,569 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 12:46:32,570 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 12:46:33,175 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:46:33,377 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 12:46:33,377 DEBUG   SenderThread:63059 [sender.py:send():378] send: history
+2024-06-07 12:46:33,377 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 12:46:33,377 INFO    SenderThread:63059 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 12:46:34,180 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/wandb-summary.json
+2024-06-07 12:46:35,186 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:46:37,097 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 12:46:37,196 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:46:38,390 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 12:46:38,391 DEBUG   SenderThread:63059 [sender.py:send():378] send: history
+2024-06-07 12:46:38,391 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 12:46:38,391 INFO    SenderThread:63059 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 12:46:39,203 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/wandb-summary.json
+2024-06-07 12:46:39,203 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:46:41,213 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:46:42,180 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 12:46:43,224 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:46:43,999 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 12:46:43,999 DEBUG   SenderThread:63059 [sender.py:send():378] send: history
+2024-06-07 12:46:44,000 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 12:46:44,000 INFO    SenderThread:63059 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 12:46:44,229 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/wandb-summary.json
+2024-06-07 12:46:45,234 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:46:47,226 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 12:46:47,247 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:46:47,577 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 12:46:47,577 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 12:46:49,075 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 12:46:49,076 DEBUG   SenderThread:63059 [sender.py:send():378] send: history
+2024-06-07 12:46:49,076 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 12:46:49,077 INFO    SenderThread:63059 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 12:46:49,261 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/wandb-summary.json
+2024-06-07 12:46:49,261 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:46:51,293 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:46:52,251 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 12:46:53,304 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:46:54,393 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 12:46:54,393 DEBUG   SenderThread:63059 [sender.py:send():378] send: history
+2024-06-07 12:46:54,393 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 12:46:54,394 INFO    SenderThread:63059 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 12:46:55,318 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/wandb-summary.json
+2024-06-07 12:46:55,318 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:46:57,308 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 12:46:57,330 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:46:59,343 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:46:59,682 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 12:46:59,682 DEBUG   SenderThread:63059 [sender.py:send():378] send: history
+2024-06-07 12:46:59,682 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 12:46:59,683 INFO    SenderThread:63059 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 12:47:00,349 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/wandb-summary.json
+2024-06-07 12:47:01,355 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:47:02,349 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 12:47:02,597 DEBUG   SystemMonitor:63059 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-07 12:47:02,597 DEBUG   SenderThread:63059 [sender.py:send():378] send: stats
+2024-06-07 12:47:02,601 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 12:47:02,601 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 12:47:03,367 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:47:04,807 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 12:47:04,808 DEBUG   SenderThread:63059 [sender.py:send():378] send: history
+2024-06-07 12:47:04,808 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 12:47:04,808 INFO    SenderThread:63059 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 12:47:05,376 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/wandb-summary.json
+2024-06-07 12:47:05,377 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:47:07,384 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:47:07,431 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 12:47:09,395 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:47:09,898 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 12:47:09,898 DEBUG   SenderThread:63059 [sender.py:send():378] send: history
+2024-06-07 12:47:09,898 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 12:47:09,899 INFO    SenderThread:63059 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 12:47:10,401 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/wandb-summary.json
+2024-06-07 12:47:11,403 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:47:12,452 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 12:47:13,414 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:47:14,908 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 12:47:14,908 DEBUG   SenderThread:63059 [sender.py:send():378] send: history
+2024-06-07 12:47:14,908 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 12:47:14,908 INFO    SenderThread:63059 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 12:47:15,425 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/wandb-summary.json
+2024-06-07 12:47:15,425 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:47:17,435 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:47:17,524 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 12:47:17,613 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 12:47:17,613 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 12:47:19,443 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:47:20,180 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 12:47:20,180 DEBUG   SenderThread:63059 [sender.py:send():378] send: history
+2024-06-07 12:47:20,180 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 12:47:20,181 INFO    SenderThread:63059 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 12:47:20,181 DEBUG   SenderThread:63059 [sender.py:send():378] send: telemetry
+2024-06-07 12:47:20,183 DEBUG   SenderThread:63059 [sender.py:send():378] send: exit
+2024-06-07 12:47:20,183 INFO    SenderThread:63059 [sender.py:send_exit():585] handling exit code: 0
+2024-06-07 12:47:20,183 INFO    SenderThread:63059 [sender.py:send_exit():587] handling runtime: 78
+2024-06-07 12:47:20,183 INFO    SenderThread:63059 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 12:47:20,183 INFO    SenderThread:63059 [sender.py:send_exit():593] send defer
+2024-06-07 12:47:20,183 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 12:47:20,183 INFO    HandlerThread:63059 [handler.py:handle_request_defer():184] handle defer: 0
+2024-06-07 12:47:20,183 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: defer
+2024-06-07 12:47:20,183 INFO    SenderThread:63059 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-06-07 12:47:20,183 INFO    SenderThread:63059 [sender.py:transition_state():613] send defer: 1
+2024-06-07 12:47:20,184 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 12:47:20,184 INFO    HandlerThread:63059 [handler.py:handle_request_defer():184] handle defer: 1
+2024-06-07 12:47:20,184 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: defer
+2024-06-07 12:47:20,184 INFO    SenderThread:63059 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-06-07 12:47:20,184 INFO    SenderThread:63059 [sender.py:transition_state():613] send defer: 2
+2024-06-07 12:47:20,184 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 12:47:20,184 INFO    HandlerThread:63059 [handler.py:handle_request_defer():184] handle defer: 2
+2024-06-07 12:47:20,184 INFO    HandlerThread:63059 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-07 12:47:20,184 DEBUG   SystemMonitor:63059 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-07 12:47:20,184 DEBUG   SystemMonitor:63059 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-07 12:47:20,184 INFO    HandlerThread:63059 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-07 12:47:20,184 INFO    HandlerThread:63059 [interfaces.py:finish():200] Joined disk monitor
+2024-06-07 12:47:20,184 INFO    HandlerThread:63059 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-07 12:47:20,184 INFO    HandlerThread:63059 [interfaces.py:finish():200] Joined memory monitor
+2024-06-07 12:47:20,184 INFO    HandlerThread:63059 [interfaces.py:finish():200] Joined network monitor
+2024-06-07 12:47:20,184 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: defer
+2024-06-07 12:47:20,184 INFO    SenderThread:63059 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-06-07 12:47:20,184 INFO    SenderThread:63059 [sender.py:transition_state():613] send defer: 3
+2024-06-07 12:47:20,184 DEBUG   SenderThread:63059 [sender.py:send():378] send: stats
+2024-06-07 12:47:20,185 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 12:47:20,185 INFO    HandlerThread:63059 [handler.py:handle_request_defer():184] handle defer: 3
+2024-06-07 12:47:20,185 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: defer
+2024-06-07 12:47:20,185 INFO    SenderThread:63059 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-06-07 12:47:20,185 INFO    SenderThread:63059 [sender.py:transition_state():613] send defer: 4
+2024-06-07 12:47:20,185 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 12:47:20,185 INFO    HandlerThread:63059 [handler.py:handle_request_defer():184] handle defer: 4
+2024-06-07 12:47:20,185 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: defer
+2024-06-07 12:47:20,185 INFO    SenderThread:63059 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-06-07 12:47:20,185 INFO    SenderThread:63059 [sender.py:transition_state():613] send defer: 5
+2024-06-07 12:47:20,185 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 12:47:20,185 INFO    HandlerThread:63059 [handler.py:handle_request_defer():184] handle defer: 5
+2024-06-07 12:47:20,185 DEBUG   SenderThread:63059 [sender.py:send():378] send: summary
+2024-06-07 12:47:20,185 INFO    SenderThread:63059 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 12:47:20,185 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: defer
+2024-06-07 12:47:20,185 INFO    SenderThread:63059 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-06-07 12:47:20,185 INFO    SenderThread:63059 [sender.py:transition_state():613] send defer: 6
+2024-06-07 12:47:20,185 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 12:47:20,185 INFO    HandlerThread:63059 [handler.py:handle_request_defer():184] handle defer: 6
+2024-06-07 12:47:20,185 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: defer
+2024-06-07 12:47:20,185 INFO    SenderThread:63059 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-06-07 12:47:20,187 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 12:47:20,340 INFO    SenderThread:63059 [sender.py:transition_state():613] send defer: 7
+2024-06-07 12:47:20,340 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 12:47:20,340 INFO    HandlerThread:63059 [handler.py:handle_request_defer():184] handle defer: 7
+2024-06-07 12:47:20,341 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: defer
+2024-06-07 12:47:20,341 INFO    SenderThread:63059 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-06-07 12:47:20,448 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/config.yaml
+2024-06-07 12:47:20,448 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/wandb-summary.json
+2024-06-07 12:47:21,188 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-07 12:47:21,454 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:47:22,906 INFO    SenderThread:63059 [sender.py:transition_state():613] send defer: 8
+2024-06-07 12:47:22,907 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: poll_exit
+2024-06-07 12:47:22,907 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 12:47:22,907 INFO    HandlerThread:63059 [handler.py:handle_request_defer():184] handle defer: 8
+2024-06-07 12:47:22,908 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: defer
+2024-06-07 12:47:22,908 INFO    SenderThread:63059 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-06-07 12:47:22,908 INFO    SenderThread:63059 [job_builder.py:build():432] Attempting to build job artifact
+2024-06-07 12:47:22,909 INFO    SenderThread:63059 [job_builder.py:_get_source_type():565] is repo sourced job
+2024-06-07 12:47:22,909 INFO    SenderThread:63059 [job_builder.py:_get_program_relpath():583] run is notebook based run
+2024-06-07 12:47:22,909 WARNING SenderThread:63059 [job_builder.py:_log_if_verbose():267] Source type is set to 'repo' but some required information is missing from the environment. A job will not be created from this run. See https://docs.wandb.ai/guides/launch/create-job
+2024-06-07 12:47:22,909 INFO    SenderThread:63059 [sender.py:transition_state():613] send defer: 9
+2024-06-07 12:47:22,910 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 12:47:22,910 INFO    HandlerThread:63059 [handler.py:handle_request_defer():184] handle defer: 9
+2024-06-07 12:47:22,910 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: defer
+2024-06-07 12:47:22,910 INFO    SenderThread:63059 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-06-07 12:47:22,910 INFO    SenderThread:63059 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-06-07 12:47:23,197 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-07 12:47:23,461 INFO    Thread-12 :63059 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:47:23,462 INFO    SenderThread:63059 [dir_watcher.py:finish():388] scan: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files
+2024-06-07 12:47:23,462 INFO    SenderThread:63059 [dir_watcher.py:finish():402] scan save: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/requirements.txt requirements.txt
+2024-06-07 12:47:23,462 INFO    SenderThread:63059 [dir_watcher.py:finish():402] scan save: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log output.log
+2024-06-07 12:47:23,462 INFO    SenderThread:63059 [dir_watcher.py:finish():402] scan save: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/config.yaml config.yaml
+2024-06-07 12:47:23,464 INFO    SenderThread:63059 [dir_watcher.py:finish():402] scan save: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/wandb-summary.json wandb-summary.json
+2024-06-07 12:47:23,467 INFO    SenderThread:63059 [dir_watcher.py:finish():402] scan save: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/wandb-metadata.json wandb-metadata.json
+2024-06-07 12:47:23,468 INFO    SenderThread:63059 [sender.py:transition_state():613] send defer: 10
+2024-06-07 12:47:23,468 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: poll_exit
+2024-06-07 12:47:23,468 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 12:47:23,468 INFO    HandlerThread:63059 [handler.py:handle_request_defer():184] handle defer: 10
+2024-06-07 12:47:23,470 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: defer
+2024-06-07 12:47:23,471 INFO    SenderThread:63059 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-06-07 12:47:23,471 INFO    SenderThread:63059 [file_pusher.py:finish():169] shutting down file pusher
+2024-06-07 12:47:23,844 INFO    wandb-upload_0:63059 [upload_job.py:push():130] Uploaded file /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/requirements.txt
+2024-06-07 12:47:23,923 INFO    wandb-upload_3:63059 [upload_job.py:push():130] Uploaded file /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/wandb-summary.json
+2024-06-07 12:47:23,927 INFO    wandb-upload_2:63059 [upload_job.py:push():130] Uploaded file /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/config.yaml
+2024-06-07 12:47:23,933 INFO    wandb-upload_1:63059 [upload_job.py:push():130] Uploaded file /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/files/output.log
+2024-06-07 12:47:24,138 INFO    Thread-11 (_thread_body):63059 [sender.py:transition_state():613] send defer: 11
+2024-06-07 12:47:24,139 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 12:47:24,139 INFO    HandlerThread:63059 [handler.py:handle_request_defer():184] handle defer: 11
+2024-06-07 12:47:24,139 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: defer
+2024-06-07 12:47:24,139 INFO    SenderThread:63059 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-06-07 12:47:24,139 INFO    SenderThread:63059 [file_pusher.py:join():175] waiting for file pusher
+2024-06-07 12:47:24,141 INFO    SenderThread:63059 [sender.py:transition_state():613] send defer: 12
+2024-06-07 12:47:24,141 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 12:47:24,141 INFO    HandlerThread:63059 [handler.py:handle_request_defer():184] handle defer: 12
+2024-06-07 12:47:24,141 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: defer
+2024-06-07 12:47:24,141 INFO    SenderThread:63059 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-06-07 12:47:24,142 INFO    SenderThread:63059 [file_stream.py:finish():601] file stream finish called
+2024-06-07 12:47:24,199 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-07 12:47:24,298 INFO    SenderThread:63059 [file_stream.py:finish():605] file stream finish is done
+2024-06-07 12:47:24,298 INFO    SenderThread:63059 [sender.py:transition_state():613] send defer: 13
+2024-06-07 12:47:24,298 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: poll_exit
+2024-06-07 12:47:24,299 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 12:47:24,299 INFO    HandlerThread:63059 [handler.py:handle_request_defer():184] handle defer: 13
+2024-06-07 12:47:24,300 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: defer
+2024-06-07 12:47:24,300 INFO    SenderThread:63059 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-06-07 12:47:24,300 INFO    SenderThread:63059 [sender.py:transition_state():613] send defer: 14
+2024-06-07 12:47:24,300 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 12:47:24,300 DEBUG   SenderThread:63059 [sender.py:send():378] send: final
+2024-06-07 12:47:24,301 INFO    HandlerThread:63059 [handler.py:handle_request_defer():184] handle defer: 14
+2024-06-07 12:47:24,301 DEBUG   SenderThread:63059 [sender.py:send():378] send: footer
+2024-06-07 12:47:24,301 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: defer
+2024-06-07 12:47:24,301 INFO    SenderThread:63059 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-06-07 12:47:24,302 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-07 12:47:24,302 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: poll_exit
+2024-06-07 12:47:24,303 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-07 12:47:24,304 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: server_info
+2024-06-07 12:47:24,304 DEBUG   SenderThread:63059 [sender.py:send_request():405] send_request: server_info
+2024-06-07 12:47:24,304 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: get_summary
+2024-06-07 12:47:24,308 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: sampled_history
+2024-06-07 12:47:24,450 DEBUG   HandlerThread:63059 [handler.py:handle_request():158] handle_request: shutdown
+2024-06-07 12:47:24,450 INFO    HandlerThread:63059 [handler.py:finish():882] shutting down handler
+2024-06-07 12:47:25,307 INFO    WriterThread:63059 [datastore.py:close():296] close: /Users/mariayuffa/semester-project-1/wandb/run-20240607_124601-xxt12x0k/run-xxt12x0k.wandb
+2024-06-07 12:47:25,454 INFO    SenderThread:63059 [sender.py:finish():1545] shutting down sender
+2024-06-07 12:47:25,454 INFO    SenderThread:63059 [file_pusher.py:finish():169] shutting down file pusher
+2024-06-07 12:47:25,454 INFO    SenderThread:63059 [file_pusher.py:join():175] waiting for file pusher

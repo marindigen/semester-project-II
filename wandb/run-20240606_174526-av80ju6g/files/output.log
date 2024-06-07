@@ -1,0 +1,7 @@
+
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+/Users/mariayuffa/semester-project-1
+Loaded train sequences of proteins sampled from Boltzmann distribution: (1000, 200)
+Loaded test sequences of proteins sampled from Boltzmann distribution: (1000, 200)
+Loaded train sequences of proteins for encoder distribution: (1000, 5, 200)
+Loaded test sequences of proteins for encoder distribution: (1000, 5, 200)

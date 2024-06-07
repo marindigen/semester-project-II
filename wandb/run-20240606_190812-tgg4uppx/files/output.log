@@ -1,0 +1,7 @@
+  0%|          | 0/15 [00:00<?, ?it/s]  /Users/mariayuffa/semester-project-1/train.py:189: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  input_seq_enc = torch.tensor(input_seq_enc, dtype=torch.long)
+
+
+
+  0%|          | 0/1000 [00:00<?, ?it/s]99.12it/s]
+                                      s]

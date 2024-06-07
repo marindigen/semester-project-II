@@ -1,0 +1,1065 @@
+2024-06-07 15:10:51,648 INFO    StreamThr :71223 [internal.py:wandb_internal():85] W&B internal server running at pid: 71223, started at: 2024-06-07 15:10:51.641420
+2024-06-07 15:10:51,651 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status
+2024-06-07 15:10:51,652 INFO    WriterThread:71223 [datastore.py:open_for_write():87] open: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/run-bn27vrbs.wandb
+2024-06-07 15:10:51,654 DEBUG   SenderThread:71223 [sender.py:send():378] send: header
+2024-06-07 15:10:51,654 DEBUG   SenderThread:71223 [sender.py:send():378] send: run
+2024-06-07 15:10:52,043 INFO    SenderThread:71223 [dir_watcher.py:__init__():211] watching files in: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files
+2024-06-07 15:10:52,043 INFO    SenderThread:71223 [sender.py:_start_run_threads():1123] run started: bn27vrbs with start time 1717765851.129534
+2024-06-07 15:10:52,059 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: check_version
+2024-06-07 15:10:52,059 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: check_version
+2024-06-07 15:10:52,146 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: run_start
+2024-06-07 15:10:52,148 DEBUG   HandlerThread:71223 [system_info.py:__init__():26] System info init
+2024-06-07 15:10:52,148 DEBUG   HandlerThread:71223 [system_info.py:__init__():41] System info init done
+2024-06-07 15:10:52,148 INFO    HandlerThread:71223 [system_monitor.py:start():194] Starting system monitor
+2024-06-07 15:10:52,149 INFO    SystemMonitor:71223 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-07 15:10:52,149 INFO    HandlerThread:71223 [system_monitor.py:probe():214] Collecting system info
+2024-06-07 15:10:52,151 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started cpu monitoring
+2024-06-07 15:10:52,157 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started disk monitoring
+2024-06-07 15:10:52,159 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-07 15:10:52,161 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started memory monitoring
+2024-06-07 15:10:52,161 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started network monitoring
+2024-06-07 15:10:52,466 DEBUG   HandlerThread:71223 [system_info.py:probe():150] Probing system
+2024-06-07 15:10:52,466 DEBUG   HandlerThread:71223 [system_info.py:_probe_git():135] Probing git
+2024-06-07 15:10:52,478 DEBUG   HandlerThread:71223 [system_info.py:_probe_git():143] Probing git done
+2024-06-07 15:10:52,478 DEBUG   HandlerThread:71223 [system_info.py:probe():198] Probing system done
+2024-06-07 15:10:52,478 DEBUG   HandlerThread:71223 [system_monitor.py:probe():223] {'os': 'macOS-14.4.1-arm64-arm-64bit', 'python': '3.12.3', 'heartbeatAt': '2024-06-07T13:10:52.466234', 'startedAt': '2024-06-07T13:10:51.126591', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'https://github.com/marindigen/semester-project.git', 'commit': '6cde453ddb3c3b3cf5e84f7cad8b19f6f1a84fce'}, 'email': 'mariia.iuffa@gmail.com', 'root': '/Users/mariayuffa/semester-project-1', 'host': 'eduroam-269-1-061.epfl.ch', 'username': 'mariayuffa', 'executable': '/Users/mariayuffa/semester-project-1/.venv/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'cpu_freq': {'current': 3504, 'min': 702, 'max': 3504}, 'cpu_freq_per_core': [{'current': 3504, 'min': 702, 'max': 3504}], 'disk': {'/': {'total': 460.4317207336426, 'used': 12.54928970336914}}, 'gpuapple': {'type': 'Apple M2 Pro', 'vendor': 'sppci_vendor_Apple'}, 'memory': {'total': 16.0}}
+2024-06-07 15:10:52,478 INFO    HandlerThread:71223 [system_monitor.py:probe():224] Finished collecting system info
+2024-06-07 15:10:52,478 INFO    HandlerThread:71223 [system_monitor.py:probe():227] Publishing system info
+2024-06-07 15:10:52,478 INFO    HandlerThread:71223 [system_monitor.py:probe():229] Finished publishing system info
+2024-06-07 15:10:52,478 DEBUG   SenderThread:71223 [sender.py:send():378] send: files
+2024-06-07 15:10:52,478 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-metadata.json with policy now
+2024-06-07 15:10:52,523 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: python_packages
+2024-06-07 15:10:52,523 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:10:52,523 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: python_packages
+2024-06-07 15:10:52,524 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:10:52,525 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: pause
+2024-06-07 15:10:52,525 INFO    HandlerThread:71223 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-07 15:10:52,525 INFO    HandlerThread:71223 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-07 15:10:52,525 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-07 15:10:52,525 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-07 15:10:52,525 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-07 15:10:52,525 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-07 15:10:52,526 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined disk monitor
+2024-06-07 15:10:52,526 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-07 15:10:52,526 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined memory monitor
+2024-06-07 15:10:52,526 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined network monitor
+2024-06-07 15:10:52,529 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: resume
+2024-06-07 15:10:52,529 INFO    HandlerThread:71223 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-07 15:10:52,529 INFO    HandlerThread:71223 [system_monitor.py:start():194] Starting system monitor
+2024-06-07 15:10:52,530 INFO    SystemMonitor:71223 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-07 15:10:52,530 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started cpu monitoring
+2024-06-07 15:10:52,530 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started disk monitoring
+2024-06-07 15:10:52,531 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-07 15:10:52,533 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started memory monitoring
+2024-06-07 15:10:52,534 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started network monitoring
+2024-06-07 15:10:52,796 DEBUG   SenderThread:71223 [sender.py:send():378] send: telemetry
+2024-06-07 15:10:52,797 DEBUG   SenderThread:71223 [sender.py:send():378] send: telemetry
+2024-06-07 15:10:52,797 DEBUG   SenderThread:71223 [sender.py:send():378] send: stats
+2024-06-07 15:10:53,046 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/requirements.txt
+2024-06-07 15:10:53,046 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-metadata.json
+2024-06-07 15:10:53,046 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:10:53,055 INFO    wandb-upload_0:71223 [upload_job.py:push():130] Uploaded file /var/folders/mg/44g5ch495hdc8x4_5mq3dsdm0000gn/T/tmpuokvf4k8wandb/5mmnwr5o-wandb-metadata.json
+2024-06-07 15:10:55,053 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:10:56,226 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:10:56,226 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:10:56,227 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:10:56,227 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:10:56,671 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:10:57,065 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:10:57,065 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:10:58,070 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:10:59,075 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:10:59,810 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:10:59,811 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:10:59,811 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:10:59,811 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:11:00,081 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:11:01,086 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:01,800 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:11:02,088 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:03,093 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:03,323 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:11:03,323 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:11:03,323 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:11:03,323 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:11:04,098 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:04,099 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:11:05,104 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:06,109 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:06,895 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:11:06,922 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:11:06,922 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:11:06,922 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:11:06,922 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:11:07,114 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:07,114 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:11:07,529 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:11:07,529 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:11:08,119 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:09,122 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:10,589 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:11:10,590 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:11:10,590 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:11:10,590 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:11:11,133 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:11,133 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:11:11,960 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:11:12,138 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:13,142 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:14,721 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:11:14,722 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:11:14,722 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:11:14,723 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:11:15,153 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:15,153 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:11:16,153 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:17,116 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:11:17,158 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:18,325 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:11:18,326 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:11:18,326 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:11:18,326 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:11:19,167 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:19,167 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:11:20,172 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:21,177 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:21,891 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:11:21,892 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:11:21,892 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:11:21,892 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:11:22,182 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:22,183 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:11:22,216 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:11:22,534 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:11:22,534 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:11:23,188 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:23,188 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/config.yaml
+2024-06-07 15:11:24,193 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:25,195 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:25,792 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:11:25,793 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:11:25,793 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:11:25,793 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:11:26,200 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:26,200 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:11:27,201 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:27,420 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:11:28,206 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:29,211 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:29,626 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:11:29,626 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:11:29,626 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:11:29,627 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:11:30,217 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:30,217 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:11:31,219 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:32,225 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:32,565 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:11:33,226 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:33,703 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:11:33,704 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:11:33,704 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:11:33,704 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:11:34,231 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:34,231 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:11:35,236 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:36,241 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:37,243 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:37,272 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:11:37,273 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:11:37,273 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:11:37,273 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:11:37,538 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:11:37,539 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:11:37,839 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:11:38,247 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:38,247 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:11:39,250 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:40,848 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:11:40,849 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:11:40,849 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:11:40,849 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:11:41,260 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:41,260 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:11:42,266 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:42,893 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:11:43,266 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:44,568 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:11:44,568 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:11:44,568 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:11:44,569 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:11:45,276 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:45,276 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:11:46,282 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:47,286 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:47,903 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:11:48,079 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:11:48,080 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:11:48,080 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:11:48,080 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:11:48,292 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:48,292 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:11:49,297 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:50,302 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:51,307 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:52,312 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:52,424 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:11:52,424 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:11:52,424 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:11:52,425 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:11:52,537 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-07 15:11:52,538 DEBUG   SenderThread:71223 [sender.py:send():378] send: stats
+2024-06-07 15:11:52,543 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:11:52,544 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:11:52,934 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:11:53,318 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:53,318 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:11:54,323 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:55,328 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:56,305 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:11:56,305 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:11:56,305 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:11:56,306 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:11:56,333 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:11:57,338 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:58,066 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:11:58,344 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:59,349 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:11:59,914 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:11:59,914 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:11:59,914 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:11:59,915 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:12:00,349 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:00,350 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:12:01,354 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:02,360 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:03,156 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:12:03,365 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:03,555 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:12:03,555 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:12:03,555 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:12:03,555 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:12:04,370 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:04,370 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:12:05,375 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:07,178 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:12:07,179 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:12:07,179 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:12:07,179 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:12:07,385 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:07,385 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:12:07,548 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:12:07,549 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:12:08,201 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:12:08,391 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:09,396 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:10,770 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:12:10,771 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:12:10,771 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:12:10,772 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:12:11,406 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:11,406 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:12:12,412 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:13,250 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:12:13,417 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:14,555 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:12:14,555 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:12:14,556 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:12:14,556 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:12:15,428 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:15,428 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:12:16,433 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:17,438 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:18,107 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:12:18,108 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:12:18,108 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:12:18,108 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:12:18,332 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:12:18,438 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:12:19,443 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:20,449 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:21,454 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:21,685 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:12:21,685 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:12:21,685 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:12:21,686 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:12:22,459 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:22,459 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:12:22,543 DEBUG   SenderThread:71223 [sender.py:send():378] send: stats
+2024-06-07 15:12:22,554 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:12:22,554 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:12:23,370 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:12:23,460 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:24,461 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:25,390 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:12:25,391 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:12:25,391 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:12:25,391 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:12:25,466 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:25,467 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:12:26,472 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:27,477 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:28,395 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:12:28,967 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:12:28,967 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:12:28,967 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:12:28,967 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:12:29,487 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:29,488 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:12:30,492 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:31,497 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:32,605 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:12:32,606 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:12:32,606 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:12:32,606 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:12:33,506 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:33,506 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:12:33,564 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:12:34,510 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:35,515 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:36,162 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:12:36,162 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:12:36,162 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:12:36,163 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:12:36,519 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:12:37,525 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:37,555 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:12:37,555 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:12:38,530 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:38,709 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:12:39,531 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:39,742 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:12:39,743 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:12:39,743 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:12:39,743 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:12:40,536 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:40,536 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:12:41,541 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:42,547 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:43,368 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:12:43,368 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:12:43,369 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:12:43,369 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:12:43,552 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:43,552 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:12:43,818 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:12:44,558 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:45,563 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:46,940 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:12:46,941 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:12:46,941 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:12:46,941 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:12:47,573 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:47,573 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:12:48,578 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:48,874 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:12:49,579 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:50,506 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:12:50,507 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:12:50,507 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:12:50,507 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:12:50,584 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:12:51,590 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:52,549 DEBUG   SenderThread:71223 [sender.py:send():378] send: stats
+2024-06-07 15:12:52,559 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:12:52,559 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:12:52,595 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:53,600 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:53,955 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:12:54,270 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:12:54,270 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:12:54,271 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:12:54,271 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:12:54,606 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:12:55,611 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:56,616 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:57,621 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:57,879 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:12:57,879 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:12:57,879 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:12:57,879 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:12:58,626 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:12:58,626 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:12:59,028 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:12:59,631 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:13:00,637 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:13:01,403 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:13:01,403 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:13:01,404 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:13:01,404 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:13:01,642 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:13:01,642 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:13:02,647 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:13:03,652 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:13:04,043 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:13:04,896 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:13:04,896 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:13:04,896 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:13:04,897 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:13:05,662 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:13:05,663 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:13:06,667 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:13:07,564 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:13:07,565 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:13:07,673 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:13:08,417 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:13:08,417 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:13:08,417 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:13:08,417 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:13:08,678 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:13:09,055 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:13:09,683 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:13:10,688 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:13:11,693 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:13:12,087 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:13:12,088 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:13:12,088 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:13:12,088 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:13:12,697 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:13:12,697 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:13:13,701 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:13:14,199 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:13:14,706 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:13:15,706 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:13:15,968 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:13:15,969 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:13:15,969 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:13:15,969 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:13:16,707 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:13:16,707 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:13:17,712 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:13:18,717 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:13:19,307 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:13:19,722 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:13:19,843 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:13:19,843 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:13:19,843 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:13:19,844 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:13:20,727 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:13:20,727 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:13:21,732 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:13:22,554 DEBUG   SenderThread:71223 [sender.py:send():378] send: stats
+2024-06-07 15:13:22,570 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:13:22,570 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:13:23,422 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-07 15:13:23,422 DEBUG   SenderThread:71223 [sender.py:send():378] send: history
+2024-06-07 15:13:23,423 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: summary_record
+2024-06-07 15:13:23,423 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:13:23,518 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: pause
+2024-06-07 15:13:23,518 INFO    HandlerThread:71223 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-07 15:13:23,518 INFO    HandlerThread:71223 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-07 15:13:23,518 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-07 15:13:23,518 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-07 15:13:23,518 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined disk monitor
+2024-06-07 15:13:23,518 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-07 15:13:23,519 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-07 15:13:23,519 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined memory monitor
+2024-06-07 15:13:23,519 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined network monitor
+2024-06-07 15:13:23,519 DEBUG   SenderThread:71223 [sender.py:send():378] send: stats
+2024-06-07 15:13:23,742 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:13:23,742 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:13:24,521 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:13:24,746 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:13:25,750 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:13:29,544 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:13:34,562 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:13:37,574 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:13:37,576 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:13:39,824 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:13:44,842 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:13:49,860 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:13:52,579 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:13:52,580 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:13:55,802 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:14:00,821 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:14:05,836 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:14:07,582 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:14:07,583 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:14:11,794 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:14:16,813 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:14:21,834 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:14:22,583 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:14:22,584 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:14:26,876 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:14:31,896 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:14:36,913 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:14:37,586 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:14:37,587 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:14:42,777 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:14:47,797 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:14:52,587 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:14:52,587 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:14:52,806 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:14:57,823 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:15:02,839 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:15:07,592 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:15:07,593 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:15:08,746 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:15:13,763 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:15:18,781 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:15:22,596 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:15:22,597 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:15:24,769 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:15:29,782 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:15:34,800 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:15:37,600 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:15:37,602 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:15:40,758 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:15:45,776 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:15:50,797 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:15:52,606 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:15:52,607 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:15:55,798 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:16:00,814 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:16:05,836 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:16:07,610 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:16:07,612 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:16:10,881 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:16:15,897 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:16:20,912 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:16:22,615 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:16:22,616 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:16:25,924 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:16:30,943 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:16:35,959 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:16:37,618 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:16:37,618 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:16:41,891 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:16:46,912 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:16:51,925 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:16:52,623 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:16:52,624 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:16:57,857 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:17:02,877 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:17:07,625 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:17:07,626 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:17:08,798 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:17:13,811 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:17:18,829 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:17:22,629 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:17:22,630 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:17:23,845 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:17:28,868 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:17:33,889 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:17:37,634 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:17:37,634 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:17:39,812 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:17:44,828 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:17:49,849 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:17:52,638 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:17:52,639 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:17:54,885 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:17:59,906 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:18:04,926 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:18:07,640 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:18:07,640 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:18:09,992 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:18:15,010 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:18:20,029 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:18:22,644 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:18:22,645 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:18:25,856 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:18:30,877 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:18:35,887 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:18:37,647 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:18:37,648 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:18:40,890 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:18:45,909 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:18:50,927 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:18:52,651 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:18:52,652 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:18:56,819 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:19:01,839 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:19:06,856 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:19:07,656 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:19:07,657 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:19:11,899 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:19:16,912 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:19:21,930 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:19:22,661 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:19:22,661 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:19:27,917 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:19:32,934 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:19:37,665 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:19:37,666 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:19:38,842 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:19:43,858 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:19:48,875 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:19:52,665 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:19:52,666 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:19:54,876 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:19:59,888 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:20:04,907 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:20:07,670 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:20:07,671 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:20:10,864 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:20:15,880 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:20:20,899 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:20:22,674 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:20:22,674 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:20:25,955 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:20:30,976 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:20:35,990 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:20:37,676 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:20:37,677 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:20:41,879 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:20:46,897 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:20:51,917 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:20:52,677 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:20:52,678 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:20:56,946 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:21:01,970 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:21:06,987 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:21:07,682 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:21:07,683 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:21:12,926 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:21:17,939 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:21:22,688 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:21:22,689 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:21:23,929 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:21:28,948 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:21:33,966 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:21:37,693 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:21:37,694 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:21:39,889 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:21:44,906 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:21:49,925 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:21:52,694 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:21:52,694 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:21:54,952 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:21:59,969 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:22:04,992 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:22:07,697 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:22:07,698 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:22:10,883 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:22:15,905 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:22:20,922 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:22:22,704 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:22:22,705 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:22:25,940 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:22:30,957 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:22:35,971 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:22:37,706 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:22:37,707 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:22:41,024 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:22:46,039 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:22:51,053 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:22:52,707 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:22:52,708 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:22:56,897 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:23:01,916 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:23:06,939 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:23:07,708 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:23:07,709 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:23:11,946 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:23:16,960 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:23:21,976 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:23:22,714 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:23:22,715 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:23:27,939 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:23:32,961 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:23:37,717 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:23:37,718 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:23:38,930 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:23:43,951 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:23:48,974 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:23:52,723 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:23:52,724 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:23:54,947 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:23:59,960 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:24:04,980 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:24:07,728 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:24:07,729 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:24:10,927 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:24:15,944 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:24:20,959 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:24:22,731 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:24:22,732 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:24:26,162 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:24:31,181 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:24:36,195 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:24:37,732 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:24:37,733 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:24:41,935 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:24:46,950 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:24:51,973 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:24:52,737 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:24:52,738 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:24:57,013 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:25:02,032 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:25:07,047 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:25:07,739 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:25:07,739 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:25:12,943 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:25:17,960 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:25:22,739 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:25:22,739 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:25:23,943 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:25:28,962 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:25:33,981 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:25:37,743 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:25:37,744 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:25:39,909 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:25:44,927 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:25:49,946 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:25:52,748 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:25:52,749 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:25:54,964 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:25:59,975 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:26:04,994 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:26:07,753 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:26:07,754 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:26:10,963 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:26:15,986 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:26:21,007 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:26:22,757 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:26:22,757 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:26:26,954 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:26:29,771 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: resume
+2024-06-07 15:26:29,771 INFO    HandlerThread:71223 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-07 15:26:29,771 INFO    HandlerThread:71223 [system_monitor.py:start():194] Starting system monitor
+2024-06-07 15:26:29,771 INFO    SystemMonitor:71223 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-07 15:26:29,771 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started cpu monitoring
+2024-06-07 15:26:29,772 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started disk monitoring
+2024-06-07 15:26:29,772 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-07 15:26:29,774 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started memory monitoring
+2024-06-07 15:26:29,775 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started network monitoring
+2024-06-07 15:26:29,776 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: pause
+2024-06-07 15:26:29,776 INFO    HandlerThread:71223 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-07 15:26:29,776 INFO    HandlerThread:71223 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-07 15:26:29,776 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-07 15:26:29,776 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-07 15:26:29,776 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-07 15:26:29,776 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined disk monitor
+2024-06-07 15:26:29,776 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-07 15:26:30,039 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-07 15:26:30,040 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined memory monitor
+2024-06-07 15:26:30,040 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined network monitor
+2024-06-07 15:26:30,040 DEBUG   SenderThread:71223 [sender.py:send():378] send: stats
+2024-06-07 15:26:32,043 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:26:32,070 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: resume
+2024-06-07 15:26:32,070 INFO    HandlerThread:71223 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-07 15:26:32,070 INFO    HandlerThread:71223 [system_monitor.py:start():194] Starting system monitor
+2024-06-07 15:26:32,070 INFO    SystemMonitor:71223 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-07 15:26:32,070 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started cpu monitoring
+2024-06-07 15:26:32,070 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started disk monitoring
+2024-06-07 15:26:32,072 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-07 15:26:32,073 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: pause
+2024-06-07 15:26:32,074 INFO    HandlerThread:71223 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-07 15:26:32,074 INFO    HandlerThread:71223 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-07 15:26:32,075 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started memory monitoring
+2024-06-07 15:26:32,075 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-07 15:26:32,075 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-07 15:26:32,075 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-07 15:26:32,076 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-07 15:26:32,076 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined disk monitor
+2024-06-07 15:26:32,417 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-07 15:26:32,418 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined memory monitor
+2024-06-07 15:26:32,419 DEBUG   SenderThread:71223 [sender.py:send():378] send: stats
+2024-06-07 15:26:37,435 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:26:37,759 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:26:37,759 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:26:42,921 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:26:43,359 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: resume
+2024-06-07 15:26:43,359 INFO    HandlerThread:71223 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-07 15:26:43,359 INFO    HandlerThread:71223 [system_monitor.py:start():194] Starting system monitor
+2024-06-07 15:26:43,360 INFO    SystemMonitor:71223 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-07 15:26:43,360 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started cpu monitoring
+2024-06-07 15:26:43,360 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started disk monitoring
+2024-06-07 15:26:43,360 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-07 15:26:43,363 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started memory monitoring
+2024-06-07 15:26:43,363 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: pause
+2024-06-07 15:26:43,363 INFO    HandlerThread:71223 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-07 15:26:43,363 INFO    HandlerThread:71223 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-07 15:26:43,364 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started network monitoring
+2024-06-07 15:26:43,364 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-07 15:26:43,364 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-07 15:26:43,364 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-07 15:26:43,364 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined disk monitor
+2024-06-07 15:26:43,364 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-07 15:26:43,664 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-07 15:26:43,665 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined memory monitor
+2024-06-07 15:26:43,665 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined network monitor
+2024-06-07 15:26:43,665 DEBUG   SenderThread:71223 [sender.py:send():378] send: stats
+2024-06-07 15:26:48,683 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:26:52,761 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-07 15:26:52,762 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: stop_status
+2024-06-07 15:26:53,939 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:26:58,802 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: resume
+2024-06-07 15:26:58,803 INFO    HandlerThread:71223 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-07 15:26:58,803 INFO    HandlerThread:71223 [system_monitor.py:start():194] Starting system monitor
+2024-06-07 15:26:58,803 INFO    SystemMonitor:71223 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-07 15:26:58,804 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started cpu monitoring
+2024-06-07 15:26:58,804 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started disk monitoring
+2024-06-07 15:26:58,804 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-07 15:26:58,807 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: pause
+2024-06-07 15:26:58,807 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started memory monitoring
+2024-06-07 15:26:58,807 INFO    HandlerThread:71223 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-07 15:26:58,808 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started network monitoring
+2024-06-07 15:26:58,809 INFO    HandlerThread:71223 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-07 15:26:58,809 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-07 15:26:58,809 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-07 15:26:58,809 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-07 15:26:58,809 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined disk monitor
+2024-06-07 15:26:58,809 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-07 15:26:59,062 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-07 15:26:59,062 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined memory monitor
+2024-06-07 15:26:59,062 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined network monitor
+2024-06-07 15:26:59,063 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:26:59,063 DEBUG   SenderThread:71223 [sender.py:send():378] send: stats
+2024-06-07 15:26:59,141 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: resume
+2024-06-07 15:26:59,141 INFO    HandlerThread:71223 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-07 15:26:59,141 INFO    HandlerThread:71223 [system_monitor.py:start():194] Starting system monitor
+2024-06-07 15:26:59,142 INFO    SystemMonitor:71223 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-07 15:26:59,142 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started cpu monitoring
+2024-06-07 15:26:59,142 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started disk monitoring
+2024-06-07 15:26:59,145 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: pause
+2024-06-07 15:26:59,145 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-07 15:26:59,146 INFO    HandlerThread:71223 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-07 15:26:59,146 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started memory monitoring
+2024-06-07 15:26:59,147 INFO    HandlerThread:71223 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-07 15:26:59,147 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started network monitoring
+2024-06-07 15:26:59,147 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-07 15:26:59,148 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-07 15:26:59,148 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined disk monitor
+2024-06-07 15:26:59,148 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-07 15:26:59,148 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-07 15:26:59,480 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-07 15:26:59,481 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined memory monitor
+2024-06-07 15:26:59,481 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined network monitor
+2024-06-07 15:26:59,481 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: resume
+2024-06-07 15:26:59,481 INFO    HandlerThread:71223 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-07 15:26:59,481 DEBUG   SenderThread:71223 [sender.py:send():378] send: stats
+2024-06-07 15:26:59,481 INFO    HandlerThread:71223 [system_monitor.py:start():194] Starting system monitor
+2024-06-07 15:26:59,481 INFO    SystemMonitor:71223 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-07 15:26:59,481 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: pause
+2024-06-07 15:26:59,482 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started cpu monitoring
+2024-06-07 15:26:59,482 INFO    HandlerThread:71223 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-07 15:26:59,482 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started disk monitoring
+2024-06-07 15:26:59,482 INFO    HandlerThread:71223 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-07 15:26:59,483 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-07 15:26:59,485 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-07 15:26:59,485 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-07 15:26:59,485 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-07 15:26:59,485 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined disk monitor
+2024-06-07 15:26:59,485 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-07 15:26:59,817 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-07 15:26:59,818 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: resume
+2024-06-07 15:26:59,818 INFO    HandlerThread:71223 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-07 15:26:59,818 INFO    HandlerThread:71223 [system_monitor.py:start():194] Starting system monitor
+2024-06-07 15:26:59,818 INFO    SystemMonitor:71223 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-07 15:26:59,818 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: pause
+2024-06-07 15:26:59,818 INFO    HandlerThread:71223 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-07 15:26:59,818 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started cpu monitoring
+2024-06-07 15:26:59,818 INFO    HandlerThread:71223 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-07 15:26:59,818 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started disk monitoring
+2024-06-07 15:26:59,818 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-07 15:26:59,819 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-07 15:26:59,819 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined disk monitor
+2024-06-07 15:26:59,819 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-07 15:26:59,819 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-07 15:26:59,819 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: resume
+2024-06-07 15:26:59,819 INFO    HandlerThread:71223 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-07 15:26:59,819 INFO    HandlerThread:71223 [system_monitor.py:start():194] Starting system monitor
+2024-06-07 15:26:59,819 INFO    SystemMonitor:71223 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-07 15:26:59,819 DEBUG   SenderThread:71223 [sender.py:send():378] send: stats
+2024-06-07 15:26:59,820 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started cpu monitoring
+2024-06-07 15:26:59,820 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started disk monitoring
+2024-06-07 15:26:59,820 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: pause
+2024-06-07 15:26:59,820 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-07 15:26:59,820 INFO    HandlerThread:71223 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-07 15:26:59,822 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started memory monitoring
+2024-06-07 15:26:59,822 INFO    HandlerThread:71223 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-07 15:26:59,823 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started network monitoring
+2024-06-07 15:26:59,823 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-07 15:26:59,823 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-07 15:26:59,823 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-07 15:26:59,823 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-07 15:26:59,823 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined disk monitor
+2024-06-07 15:27:00,045 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-07 15:27:00,045 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined memory monitor
+2024-06-07 15:27:00,045 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined network monitor
+2024-06-07 15:27:00,046 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: resume
+2024-06-07 15:27:00,046 INFO    HandlerThread:71223 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-07 15:27:00,046 INFO    HandlerThread:71223 [system_monitor.py:start():194] Starting system monitor
+2024-06-07 15:27:00,046 INFO    SystemMonitor:71223 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-07 15:27:00,046 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: pause
+2024-06-07 15:27:00,046 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started cpu monitoring
+2024-06-07 15:27:00,046 INFO    HandlerThread:71223 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-07 15:27:00,046 INFO    HandlerThread:71223 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-07 15:27:00,046 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started disk monitoring
+2024-06-07 15:27:00,046 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-07 15:27:00,046 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-07 15:27:00,046 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined disk monitor
+2024-06-07 15:27:00,046 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-07 15:27:00,046 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-07 15:27:00,047 DEBUG   SenderThread:71223 [sender.py:send():378] send: stats
+2024-06-07 15:27:00,047 DEBUG   SenderThread:71223 [sender.py:send():378] send: stats
+2024-06-07 15:27:00,115 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:27:00,446 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: resume
+2024-06-07 15:27:00,446 INFO    HandlerThread:71223 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-07 15:27:00,446 INFO    HandlerThread:71223 [system_monitor.py:start():194] Starting system monitor
+2024-06-07 15:27:00,447 INFO    SystemMonitor:71223 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-07 15:27:00,447 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started cpu monitoring
+2024-06-07 15:27:00,448 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started disk monitoring
+2024-06-07 15:27:00,451 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-07 15:27:00,452 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: pause
+2024-06-07 15:27:00,453 INFO    HandlerThread:71223 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-06-07 15:27:00,453 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started memory monitoring
+2024-06-07 15:27:00,454 INFO    HandlerThread:71223 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-07 15:27:00,454 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started network monitoring
+2024-06-07 15:27:00,454 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-07 15:27:00,454 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-07 15:27:00,454 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined disk monitor
+2024-06-07 15:27:00,455 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-07 15:27:00,455 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-07 15:27:00,858 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-07 15:27:00,858 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined memory monitor
+2024-06-07 15:27:00,858 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined network monitor
+2024-06-07 15:27:00,858 DEBUG   SenderThread:71223 [sender.py:send():378] send: stats
+2024-06-07 15:27:01,359 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: resume
+2024-06-07 15:27:01,359 INFO    HandlerThread:71223 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-06-07 15:27:01,359 INFO    HandlerThread:71223 [system_monitor.py:start():194] Starting system monitor
+2024-06-07 15:27:01,359 INFO    SystemMonitor:71223 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-07 15:27:01,360 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started cpu monitoring
+2024-06-07 15:27:01,360 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started disk monitoring
+2024-06-07 15:27:01,362 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started gpuapple monitoring
+2024-06-07 15:27:01,364 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started memory monitoring
+2024-06-07 15:27:01,367 INFO    SystemMonitor:71223 [interfaces.py:start():188] Started network monitoring
+2024-06-07 15:27:01,400 DEBUG   SenderThread:71223 [sender.py:send():378] send: telemetry
+2024-06-07 15:27:01,402 DEBUG   SenderThread:71223 [sender.py:send():378] send: exit
+2024-06-07 15:27:01,402 INFO    SenderThread:71223 [sender.py:send_exit():585] handling exit code: 0
+2024-06-07 15:27:01,402 INFO    SenderThread:71223 [sender.py:send_exit():587] handling runtime: 153
+2024-06-07 15:27:01,403 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:27:01,403 INFO    SenderThread:71223 [sender.py:send_exit():593] send defer
+2024-06-07 15:27:01,405 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 15:27:01,405 INFO    HandlerThread:71223 [handler.py:handle_request_defer():184] handle defer: 0
+2024-06-07 15:27:01,405 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: defer
+2024-06-07 15:27:01,405 INFO    SenderThread:71223 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-06-07 15:27:01,405 INFO    SenderThread:71223 [sender.py:transition_state():613] send defer: 1
+2024-06-07 15:27:01,405 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 15:27:01,405 INFO    HandlerThread:71223 [handler.py:handle_request_defer():184] handle defer: 1
+2024-06-07 15:27:01,406 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: defer
+2024-06-07 15:27:01,406 INFO    SenderThread:71223 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-06-07 15:27:01,406 INFO    SenderThread:71223 [sender.py:transition_state():613] send defer: 2
+2024-06-07 15:27:01,406 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 15:27:01,406 INFO    HandlerThread:71223 [handler.py:handle_request_defer():184] handle defer: 2
+2024-06-07 15:27:01,406 INFO    HandlerThread:71223 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-07 15:27:01,406 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-07 15:27:01,406 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-07 15:27:01,406 DEBUG   SystemMonitor:71223 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-07 15:27:01,407 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-07 15:27:01,407 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined disk monitor
+2024-06-07 15:27:01,646 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-06-07 15:27:01,646 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined memory monitor
+2024-06-07 15:27:01,646 INFO    HandlerThread:71223 [interfaces.py:finish():200] Joined network monitor
+2024-06-07 15:27:01,646 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: defer
+2024-06-07 15:27:01,646 INFO    SenderThread:71223 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-06-07 15:27:01,646 INFO    SenderThread:71223 [sender.py:transition_state():613] send defer: 3
+2024-06-07 15:27:01,646 DEBUG   SenderThread:71223 [sender.py:send():378] send: stats
+2024-06-07 15:27:01,646 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 15:27:01,646 INFO    HandlerThread:71223 [handler.py:handle_request_defer():184] handle defer: 3
+2024-06-07 15:27:01,647 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: defer
+2024-06-07 15:27:01,647 INFO    SenderThread:71223 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-06-07 15:27:01,647 INFO    SenderThread:71223 [sender.py:transition_state():613] send defer: 4
+2024-06-07 15:27:01,647 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 15:27:01,647 INFO    HandlerThread:71223 [handler.py:handle_request_defer():184] handle defer: 4
+2024-06-07 15:27:01,647 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: defer
+2024-06-07 15:27:01,647 INFO    SenderThread:71223 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-06-07 15:27:01,647 INFO    SenderThread:71223 [sender.py:transition_state():613] send defer: 5
+2024-06-07 15:27:01,647 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 15:27:01,647 INFO    HandlerThread:71223 [handler.py:handle_request_defer():184] handle defer: 5
+2024-06-07 15:27:01,647 DEBUG   SenderThread:71223 [sender.py:send():378] send: summary
+2024-06-07 15:27:01,647 INFO    SenderThread:71223 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-07 15:27:01,647 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: defer
+2024-06-07 15:27:01,647 INFO    SenderThread:71223 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-06-07 15:27:01,647 INFO    SenderThread:71223 [sender.py:transition_state():613] send defer: 6
+2024-06-07 15:27:01,647 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 15:27:01,647 INFO    HandlerThread:71223 [handler.py:handle_request_defer():184] handle defer: 6
+2024-06-07 15:27:01,647 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: defer
+2024-06-07 15:27:01,647 INFO    SenderThread:71223 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-06-07 15:27:01,649 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: status_report
+2024-06-07 15:27:01,844 INFO    SenderThread:71223 [sender.py:transition_state():613] send defer: 7
+2024-06-07 15:27:01,844 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 15:27:01,844 INFO    HandlerThread:71223 [handler.py:handle_request_defer():184] handle defer: 7
+2024-06-07 15:27:01,844 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: defer
+2024-06-07 15:27:01,844 INFO    SenderThread:71223 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-06-07 15:27:02,121 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:27:02,121 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/config.yaml
+2024-06-07 15:27:02,122 INFO    Thread-24 :71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:27:02,405 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-07 15:27:03,550 INFO    SenderThread:71223 [sender.py:transition_state():613] send defer: 8
+2024-06-07 15:27:03,551 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: poll_exit
+2024-06-07 15:27:03,551 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 15:27:03,551 INFO    HandlerThread:71223 [handler.py:handle_request_defer():184] handle defer: 8
+2024-06-07 15:27:03,552 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: defer
+2024-06-07 15:27:03,552 INFO    SenderThread:71223 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-06-07 15:27:03,552 INFO    SenderThread:71223 [job_builder.py:build():432] Attempting to build job artifact
+2024-06-07 15:27:03,553 INFO    SenderThread:71223 [job_builder.py:_get_source_type():565] is repo sourced job
+2024-06-07 15:27:03,553 INFO    SenderThread:71223 [job_builder.py:_get_program_relpath():583] run is notebook based run
+2024-06-07 15:27:03,554 WARNING SenderThread:71223 [job_builder.py:_log_if_verbose():267] Source type is set to 'repo' but some required information is missing from the environment. A job will not be created from this run. See https://docs.wandb.ai/guides/launch/create-job
+2024-06-07 15:27:03,554 INFO    SenderThread:71223 [sender.py:transition_state():613] send defer: 9
+2024-06-07 15:27:03,554 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 15:27:03,554 INFO    HandlerThread:71223 [handler.py:handle_request_defer():184] handle defer: 9
+2024-06-07 15:27:03,554 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: defer
+2024-06-07 15:27:03,554 INFO    SenderThread:71223 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-06-07 15:27:03,554 INFO    SenderThread:71223 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-06-07 15:27:04,127 INFO    SenderThread:71223 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:27:04,128 INFO    SenderThread:71223 [dir_watcher.py:finish():388] scan: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files
+2024-06-07 15:27:04,128 INFO    SenderThread:71223 [dir_watcher.py:finish():402] scan save: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/requirements.txt requirements.txt
+2024-06-07 15:27:04,129 INFO    SenderThread:71223 [dir_watcher.py:finish():402] scan save: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log output.log
+2024-06-07 15:27:04,131 INFO    SenderThread:71223 [dir_watcher.py:finish():402] scan save: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/config.yaml config.yaml
+2024-06-07 15:27:04,133 INFO    SenderThread:71223 [dir_watcher.py:finish():402] scan save: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json wandb-summary.json
+2024-06-07 15:27:04,135 INFO    SenderThread:71223 [dir_watcher.py:finish():402] scan save: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-metadata.json wandb-metadata.json
+2024-06-07 15:27:04,136 INFO    SenderThread:71223 [sender.py:transition_state():613] send defer: 10
+2024-06-07 15:27:04,137 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 15:27:04,137 INFO    HandlerThread:71223 [handler.py:handle_request_defer():184] handle defer: 10
+2024-06-07 15:27:04,138 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: defer
+2024-06-07 15:27:04,138 INFO    SenderThread:71223 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-06-07 15:27:04,138 INFO    SenderThread:71223 [file_pusher.py:finish():169] shutting down file pusher
+2024-06-07 15:27:04,410 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-07 15:27:04,414 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: poll_exit
+2024-06-07 15:27:04,657 INFO    wandb-upload_0:71223 [upload_job.py:push():130] Uploaded file /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/requirements.txt
+2024-06-07 15:27:04,664 INFO    wandb-upload_2:71223 [upload_job.py:push():130] Uploaded file /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/config.yaml
+2024-06-07 15:27:04,714 INFO    wandb-upload_3:71223 [upload_job.py:push():130] Uploaded file /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/wandb-summary.json
+2024-06-07 15:27:04,818 INFO    wandb-upload_1:71223 [upload_job.py:push():130] Uploaded file /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/files/output.log
+2024-06-07 15:27:05,022 INFO    Thread-23 (_thread_body):71223 [sender.py:transition_state():613] send defer: 11
+2024-06-07 15:27:05,022 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 15:27:05,022 INFO    HandlerThread:71223 [handler.py:handle_request_defer():184] handle defer: 11
+2024-06-07 15:27:05,023 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: defer
+2024-06-07 15:27:05,023 INFO    SenderThread:71223 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-06-07 15:27:05,023 INFO    SenderThread:71223 [file_pusher.py:join():175] waiting for file pusher
+2024-06-07 15:27:05,024 INFO    SenderThread:71223 [sender.py:transition_state():613] send defer: 12
+2024-06-07 15:27:05,025 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 15:27:05,025 INFO    HandlerThread:71223 [handler.py:handle_request_defer():184] handle defer: 12
+2024-06-07 15:27:05,025 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: defer
+2024-06-07 15:27:05,025 INFO    SenderThread:71223 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-06-07 15:27:05,025 INFO    SenderThread:71223 [file_stream.py:finish():601] file stream finish called
+2024-06-07 15:27:05,415 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-07 15:27:05,572 INFO    SenderThread:71223 [file_stream.py:finish():605] file stream finish is done
+2024-06-07 15:27:05,572 INFO    SenderThread:71223 [sender.py:transition_state():613] send defer: 13
+2024-06-07 15:27:05,572 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: poll_exit
+2024-06-07 15:27:05,572 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 15:27:05,573 INFO    HandlerThread:71223 [handler.py:handle_request_defer():184] handle defer: 13
+2024-06-07 15:27:05,573 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: defer
+2024-06-07 15:27:05,573 INFO    SenderThread:71223 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-06-07 15:27:05,573 INFO    SenderThread:71223 [sender.py:transition_state():613] send defer: 14
+2024-06-07 15:27:05,573 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: defer
+2024-06-07 15:27:05,573 INFO    HandlerThread:71223 [handler.py:handle_request_defer():184] handle defer: 14
+2024-06-07 15:27:05,573 DEBUG   SenderThread:71223 [sender.py:send():378] send: final
+2024-06-07 15:27:05,573 DEBUG   SenderThread:71223 [sender.py:send():378] send: footer
+2024-06-07 15:27:05,573 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: defer
+2024-06-07 15:27:05,573 INFO    SenderThread:71223 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-06-07 15:27:05,574 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-07 15:27:05,574 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: poll_exit
+2024-06-07 15:27:05,574 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-07 15:27:05,574 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: server_info
+2024-06-07 15:27:05,575 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: get_summary
+2024-06-07 15:27:05,575 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: sampled_history
+2024-06-07 15:27:05,575 DEBUG   SenderThread:71223 [sender.py:send_request():405] send_request: server_info
+2024-06-07 15:27:05,733 DEBUG   HandlerThread:71223 [handler.py:handle_request():158] handle_request: shutdown
+2024-06-07 15:27:05,733 INFO    HandlerThread:71223 [handler.py:finish():882] shutting down handler
+2024-06-07 15:27:06,577 INFO    WriterThread:71223 [datastore.py:close():296] close: /Users/mariayuffa/semester-project-1/wandb/run-20240607_151051-bn27vrbs/run-bn27vrbs.wandb
+2024-06-07 15:27:06,734 INFO    SenderThread:71223 [sender.py:finish():1545] shutting down sender
+2024-06-07 15:27:06,735 INFO    SenderThread:71223 [file_pusher.py:finish():169] shutting down file pusher
+2024-06-07 15:27:06,735 INFO    SenderThread:71223 [file_pusher.py:join():175] waiting for file pusher
