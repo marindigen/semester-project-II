@@ -1,0 +1,74 @@
+  0%|          | 0/50 [00:00<?, ?it/s]/var/folders/mg/44g5ch495hdc8x4_5mq3dsdm0000gn/T/ipykernel_12389/1108523803.py:14: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  input_seq_enc = torch.tensor(data_enc, dtype=torch.long)
+/var/folders/mg/44g5ch495hdc8x4_5mq3dsdm0000gn/T/ipykernel_12389/1108523803.py:15: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  input_seq_dec = torch.tensor(data_dec, dtype=torch.long)
+  2%|▏         | 1/50 [00:00<00:47,  1.04it/s]
+Epoch 1 | Train Loss: 0.5135
+
+  8%|▊         | 4/50 [00:03<00:38,  1.20it/s]
+Epoch 3 | Train Loss: 0.4919
+Epoch 4 | Train Loss: 0.4701
+
+ 12%|█▏        | 6/50 [00:04<00:35,  1.23it/s]
+Epoch 6 | Train Loss: 0.4758
+
+ 18%|█▊        | 9/50 [00:07<00:32,  1.28it/s]
+Epoch 8 | Train Loss: 0.4842
+Epoch 9 | Train Loss: 0.4880
+
+ 24%|██▍       | 12/50 [00:09<00:29,  1.27it/s]
+Epoch 11 | Train Loss: 0.4755
+Epoch 12 | Train Loss: 0.5058
+
+ 28%|██▊       | 14/50 [00:11<00:27,  1.29it/s]
+Epoch 14 | Train Loss: 0.4629
+
+ 34%|███▍      | 17/50 [00:13<00:25,  1.30it/s]
+Epoch 16 | Train Loss: 0.4764
+Epoch 17 | Train Loss: 0.4829
+
+ 38%|███▊      | 19/50 [00:15<00:23,  1.30it/s]
+Epoch 19 | Train Loss: 0.4738
+Epoch 20 | Train Loss: 0.4610
+
+ 44%|████▍     | 22/50 [00:17<00:21,  1.31it/s]
+Epoch 22 | Train Loss: 0.4690
+
+ 50%|█████     | 25/50 [00:19<00:19,  1.30it/s]
+Epoch 24 | Train Loss: 0.4823
+Epoch 25 | Train Loss: 0.4690
+
+ 54%|█████▍    | 27/50 [00:21<00:17,  1.30it/s]
+Epoch 27 | Train Loss: 0.4801
+
+ 60%|██████    | 30/50 [00:23<00:15,  1.30it/s]
+Epoch 29 | Train Loss: 0.4647
+Epoch 30 | Train Loss: 0.4655
+
+ 66%|██████▌   | 33/50 [00:25<00:13,  1.29it/s]
+Epoch 32 | Train Loss: 0.4590
+Epoch 33 | Train Loss: 0.4414
+
+ 70%|███████   | 35/50 [00:27<00:11,  1.30it/s]
+Epoch 35 | Train Loss: 0.4363
+
+ 76%|███████▌  | 38/50 [00:29<00:09,  1.30it/s]
+Epoch 37 | Train Loss: 0.4477
+Epoch 38 | Train Loss: 0.4629
+ 76%|███████▌  | 38/50 [00:29<00:09,  1.30it/s][34m[1mwandb[39m[22m: 429 encountered (Filestream rate limit exceeded, retrying in 2.1 seconds.), retrying request
+ 80%|████████  | 40/50 [00:31<00:07,  1.30it/s]
+Epoch 40 | Train Loss: 0.4577
+Epoch 41 | Train Loss: 0.4722
+
+ 86%|████████▌ | 43/50 [00:33<00:05,  1.30it/s]
+Epoch 43 | Train Loss: 0.4611
+
+ 92%|█████████▏| 46/50 [00:35<00:03,  1.29it/s]
+Epoch 45 | Train Loss: 0.4752
+Epoch 46 | Train Loss: 0.4513
+
+ 96%|█████████▌| 48/50 [00:37<00:01,  1.17it/s]
+Epoch 48 | Train Loss: 0.4614
+
+Epoch 49 | Train Loss: 0.4707
+Epoch 50 | Train Loss: 0.4531

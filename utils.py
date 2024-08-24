@@ -10,6 +10,7 @@ import random
 import torch.nn.functional as F
 from torch.utils.data import DataLoader, Dataset
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 ##################################################### Data Loader ###################################################
 class NumpyDataset(Dataset):
@@ -43,7 +44,7 @@ class NumpyDataset(Dataset):
         """
         return self.data[idx]
 
-def create_dataloaders(train_matrix, test_matrix, batch_size, flag_float=False):
+def create_dataloaders(train_matrix, batch_size, flag_float=False):
     """
     Creates dataloaders for the training and testing matrices.
     
@@ -57,13 +58,13 @@ def create_dataloaders(train_matrix, test_matrix, batch_size, flag_float=False):
     """
     # Create dataset objects
     train_dataset = NumpyDataset(train_matrix, flag_float)
-    test_dataset = NumpyDataset(test_matrix, flag_float)
+    #test_dataset = NumpyDataset(test_matrix, flag_float)
     
     # Create dataloaders
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
-    test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
+    #test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
     
-    return train_loader, test_loader
+    return train_loader
 
 ##################################################### Data Generation ###################################################
 
@@ -126,69 +127,6 @@ def one_hot_encoding(seq, vocab):
             one_hot[i, vocab[spin]] = 1
     return one_hot
 
-def mask_random_spins_batch(sequence_batch, vocab, pos=5, mask_token=2, one_hot_flag=False):
-    """
-    Mask random spins in a batch of sequences of protein spins.
-
-    Parameters:
-    - sequence_batch (torch.Tensor): A batch of sequences with shape (32, 200).
-    - vocab (dict): A dictionary mapping each element in the sequence to an index.
-    - pos (int): The number of positions to mask in each sequence (default is 25).
-    - mask_token (int): The token used to mask a spin (default is 2).
-    - one_hot_flag (bool): Flag to indicate if the output should be one-hot encoded (default is False).
-
-    Returns:
-    - masked_sequences (torch.Tensor): A batch of sequences with masked spins.
-    - masked_positions (torch.Tensor): The positions of the spins that were masked for each sequence.
-    """
-    assert isinstance(sequence_batch, torch.Tensor), "The sequence_batch must be a torch.Tensor"
-
-    masked_sequences = sequence_batch.clone()  # Avoid modifying the original batch
-    masked_positions = []
-
-    for i in range(sequence_batch.size(0)):
-        mask_positions = random.sample(range(sequence_batch.shape[1]), pos)
-        for mask_position in mask_positions:
-            masked_sequences[i, mask_position] = mask_token
-        masked_positions.append(mask_positions)
-
-    masked_positions = torch.tensor(masked_positions, dtype=torch.long)
-
-    if one_hot_flag:
-        one_hot = one_hot_encoding_batch(masked_sequences, vocab)
-        return torch.tensor(one_hot, dtype=torch.float32), masked_positions
-    else:
-        return torch.tensor(masked_sequences, dtype=torch.long), masked_positions
-    
-def mask_random_spins(sequence, vocab, pos=5, mask_token=2, one_hot_flag=False):
-    """
-    Mask one random spin in a sequence of protein spins.
-    
-    Parameters:
-    - sequence: a list or sequence of spins (integers)
-    - mask_token: the token used to mask a spin (default is 2)
-    
-    Returns:
-    - masked_sequence: a sequence similar to the input but with one spin masked
-    - masked_position: the position of the spin that was masked
-    """
-    # Ensure the sequence can be converted to a list for masking
-    sequence_list = sequence.numpy().tolist() if isinstance(sequence, torch.Tensor) else list(sequence)
-    # Choose a random position to mask, excluding the first spin
-    mask_positions = random.sample(range(len(sequence)), pos)
-    
-    # Mask the chosen position
-    masked_sequence = sequence_list.copy()
-    for mask_position in mask_positions:
-        masked_sequence[mask_position] = mask_token
-
-    # Create an array of zeros with shape (len(sequence), len(vocab))
-    if one_hot_flag:
-        one_hot = one_hot_encoding(masked_sequence, vocab)
-        return torch.tensor(one_hot, dtype=torch.float), torch.tensor(mask_positions, dtype=torch.long)
-    else:
-        return torch.tensor(masked_sequence, dtype=torch.long), torch.tensor(mask_positions, dtype=torch.long)
-
 ##################################################### Plotting ###################################################
 
 def generate_heatmap(weight_matrix):
@@ -211,3 +149,77 @@ def generate_heatmap(weight_matrix):
     plt.xlabel('Column Index')
     plt.ylabel('Row Index')
     plt.show()
+
+def plotting_heatmaps(initial_sequences, final_chains_train, title1, title2):
+    # Set up a figure with two subplots (1 row, 2 columns)
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 6))
+
+    # Create a heatmap on each subplot
+    sns.heatmap(initial_sequences, ax=ax1, cmap='viridis')
+    ax1.set_title(title1)
+
+    sns.heatmap(final_chains_train, ax=ax2, cmap='viridis')
+    ax2.set_title(title2)
+
+    # Adjust layout
+    plt.tight_layout()
+
+    # Display the plot
+    plt.show()
+
+################################################### Evaluation metrics ############################################
+
+'''
+def calculate_true_positives(cov_inv, J):
+    """
+    Calculate the number of true positives.
+    Args:
+        cov_inv (np.array): Inverse covariance matrix.
+        J (np.array): True interaction matrix.
+    Returns:
+        int: Number of true positives.
+    """
+    TP = 0
+    num_positives = np.sum(J==1)
+    for c, j in zip(cov_inv, J):
+        if (c == j) and (c == 1):
+            TP += 1
+    return TP, TP/num_positives
+'''
+
+def calculate_true_positives(cov_inv, J):
+    """
+    Calculate the number of true positives.
+    Args:
+        cov_inv (np.array): Inverse covariance matrix.
+        J (np.array): True interaction matrix.
+    Returns:
+        int: Number of true positives.
+    """
+    TP = 0
+    FP = 0
+    for c, j in zip(cov_inv, J):
+        if (c == j) and (c == 1):
+            TP += 1
+        elif (c != j) and (c == 1):
+            FP += 1
+    if TP+FP==0:
+        return TP, 0
+    return TP, TP/(TP+FP)
+
+def calculate_false_positives(cov_inv, J):
+    """
+    Calculate the number of false positives.
+    Args:
+        cov_inv (np.array): Inverse covariance matrix.
+        J (np.array): True interaction matrix.
+    Returns:
+        int: Number of false positives.
+    """
+    FP = 0
+    num_negatives = np.sum(J==0)
+    for c, j in zip(cov_inv, J):
+        if (c != j) and (c == 1):
+            FP += 1
+    return FP, FP/num_negatives
+

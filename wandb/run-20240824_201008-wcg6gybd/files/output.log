@@ -1,0 +1,30 @@
+  0%|          | 0/20 [00:00<?, ?it/s]/var/folders/mg/44g5ch495hdc8x4_5mq3dsdm0000gn/T/ipykernel_12389/1108523803.py:14: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  input_seq_enc = torch.tensor(data_enc, dtype=torch.long)
+/var/folders/mg/44g5ch495hdc8x4_5mq3dsdm0000gn/T/ipykernel_12389/1108523803.py:15: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  input_seq_dec = torch.tensor(data_dec, dtype=torch.long)
+ 10%|█         | 2/20 [00:01<00:12,  1.42it/s]
+Epoch 1 | Train Loss: 0.5767
+Epoch 2 | Train Loss: 0.5528
+
+ 30%|███       | 6/20 [00:03<00:08,  1.67it/s]
+Epoch 4 | Train Loss: 0.4838
+Epoch 5 | Train Loss: 0.4664
+
+ 45%|████▌     | 9/20 [00:05<00:06,  1.77it/s]
+Epoch 7 | Train Loss: 0.4984
+Epoch 8 | Train Loss: 0.4916
+Epoch 9 | Train Loss: 0.4626
+
+ 65%|██████▌   | 13/20 [00:07<00:03,  1.77it/s]
+Epoch 11 | Train Loss: 0.4745
+Epoch 12 | Train Loss: 0.4700
+Epoch 13 | Train Loss: 0.4762
+
+ 85%|████████▌ | 17/20 [00:09<00:01,  1.83it/s]
+Epoch 15 | Train Loss: 0.4739
+Epoch 16 | Train Loss: 0.4538
+
+Epoch 17 | Train Loss: 0.4659
+Epoch 18 | Train Loss: 0.4631
+Epoch 19 | Train Loss: 0.4553
+Epoch 20 | Train Loss: 0.4837

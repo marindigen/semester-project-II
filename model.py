@@ -11,6 +11,55 @@ import torch.nn.functional as F
 from torch.utils.data import DataLoader, Dataset
 from utils import *
 
+
+################################################ Simple Transformer Model #############################################################
+class VanillaAttentionTransformer(nn.Module):
+    def __init__(self, embed_dim, a, max_seq_length, num_spins=3, dropout_rate=0.0):
+        super(VanillaAttentionTransformer, self).__init__()
+        self.embed_dim = embed_dim
+        self.word_embeddings = nn.Embedding(num_spins, embed_dim)
+        self.position_embeddings = nn.Embedding(max_seq_length, embed_dim)
+        self.a = a  # parameter controlling how important positions are
+        self.value_weight = nn.Linear(embed_dim, embed_dim)
+        self.query_weight = nn.Linear(embed_dim, embed_dim)
+        self.key_weight = nn.Linear(embed_dim, embed_dim)
+
+        self.fc1 = nn.Linear(embed_dim, embed_dim)
+
+        self.fc = nn.Linear(embed_dim, num_spins-1)  # output layer
+        self.dropout = nn.Dropout(dropout_rate)
+
+    def forward(self, s):
+        if not isinstance(s, torch.Tensor):
+            s = torch.tensor(s, dtype=torch.float32)
+
+        batch_size, seq_length = s.shape
+
+        # Ensure position_ids are of shape (batch_size, seq_length)
+        position_ids = torch.arange(seq_length, dtype=torch.long).unsqueeze(0).expand(batch_size, seq_length)
+        position_embeddings = self.position_embeddings(position_ids)
+
+        x_val = self.word_embeddings(s) + self.a * position_embeddings
+        x = self.word_embeddings(s) + position_embeddings
+        
+        query = self.query_weight(x)
+        key = self.key_weight(x)
+        values = self.value_weight(x_val)
+        
+        # Simple attention score calculation (Dot product): this is equivalent to the interaction matrix
+        scores = torch.matmul(query, key.transpose(-2, -1))/math.sqrt(self.embed_dim)  # Transpose last two dimensions for matrix multiplication
+        scores = torch.softmax(scores, dim=-1)  # Apply softmax to scores to get probabilities
+
+        # Apply attention scores to values
+        attn_output = torch.matmul(scores, values)
+
+        # Apply dropout and the final fully connected layer
+        output = self.fc(torch.relu(self.fc1(self.dropout(attn_output))))
+        #output = self.fc(self.dropout(attn_output))
+
+        return output, scores
+
+
 ############################################### Transformer Model ################################################
 class MultiHeadAttention(nn.Module):
     def __init__(self, embed_dim, num_heads):
@@ -42,9 +91,6 @@ class MultiHeadAttention(nn.Module):
      
     def combine_heads(self, x):
         batch_size, _, seq_length, d_k = x.size()
-        #print("x somewhere:", x.shape)
-        #print("seqeunce length:",seq_length)
-        #print("d model dim:",self.d_model)
         return x.transpose(1, 2).contiguous().view(batch_size,seq_length, self.d_model)
         
     def forward(self, Q, K, V, mask=None):
@@ -68,26 +114,22 @@ class VanillaAttention(nn.Module):
         self.value_weight = nn.Linear(embed_dim, embed_dim)
         self.query_weight = nn.Linear(embed_dim, embed_dim)
         self.key_weight = nn.Linear(embed_dim, embed_dim)
-        self.fc = nn.Linear(embed_dim, embed_dim)  # output layer
+        self.fc1 = nn.Linear(embed_dim, embed_dim)  # output layer
+        self.fc2 = nn.Linear(embed_dim, embed_dim)  # output layer
         self.dropout = nn.Dropout(dropout_rate)
         self.scale = math.sqrt(embed_dim)
 
     def forward(self, s, enc_output):
+        # Vanilla attention has the same architecture as the one in simple transformer
 
-        #position_ids = torch.arange(s.size(0), dtype=torch.long)
-        #x = self.word_embeddings(s) + self.a*self.position_embeddings(position_ids)
-        #x = s + self.a*self.position_embeddings(position_ids)
         batch_size_decoder = s.shape[0]
         batch_size_encoder = enc_output.shape[0]
         if batch_size_decoder != batch_size_encoder:
-            # Example approach: expand enc_output to match s's batch size
-            # This simple repeat might not be the best approach depending on your specific needs
             s = s.repeat(batch_size_encoder // batch_size_decoder, 1, 1)
 
         query = self.query_weight(s)
         key = self.key_weight(enc_output)
         values = self.value_weight(enc_output)
-        # Simple attention score calculation (Dot product): this is equivalent to the interaction matrix
         scores = torch.matmul(query, key.transpose(-2, -1)) / self.scale # Transpose last two dimensions for matrix multiplication
         attn_weights = torch.softmax(scores, dim=-1)  # Apply softmax to scores to get probabilities
 
@@ -96,10 +138,7 @@ class VanillaAttention(nn.Module):
         if batch_size_decoder != batch_size_encoder:
             output = output.view(batch_size_decoder, batch_size_encoder // batch_size_decoder, output.size(-2), output.size(-1)).mean(dim=1)
 
-        # Sum over the sequence length dimensions
-        #attn_output = attn_output.sum(dim=1)
-        output = self.fc(self.dropout(output)) # should have size (20,3)
-
+        output = self.fc2(torch.relu(self.fc1(self.dropout(output)))) # should have size (20,3)
         return output, attn_weights
     
 class PositionWiseFeedForward(nn.Module):
@@ -174,3 +213,42 @@ class DecoderLayer(nn.Module):
         self.decoder_attn_weights = decoder_attn_weights
         return x
     
+
+class Transformer(nn.Module):
+    def __init__(self, embed_dim, a, max_seq_length, num_spins, proj_layer_dim, dropout, num_distr=5):
+        super(Transformer, self).__init__()
+        self.encoder_embedding = nn.Embedding(num_spins, embed_dim)
+        self.decoder_embedding = nn.Embedding(num_spins, embed_dim)
+
+        #self.encoder_layers = nn.ModuleList([EncoderLayer(d_model, num_heads, d_ff, dropout) for _ in range(num_layers)])
+        #self.decoder_layers = nn.ModuleList([DecoderLayer(d_model, num_heads, d_ff, dropout) for _ in range(num_layers)])
+        self.positional_encoding = PositionalEncoding(embed_dim, max_seq_length)
+        self.positional_embedding = nn.Embedding(max_seq_length, embed_dim)
+        self.encoder_layer = EncoderLayer(embed_dim, proj_layer_dim, dropout, num_distr)
+        self.decoder_layer = DecoderLayer(embed_dim, a, max_seq_length, num_spins, proj_layer_dim, dropout)
+        self.a = a
+        self.fc = nn.Linear(embed_dim, num_spins-1)
+
+    def forward(self, src, tgt):
+        #src_mask, tgt_mask = self.generate_mask(src, tgt)
+        #src_embedded = self.dropout(self.positional_encoding(self.encoder_embedding(src)))
+        #tgt_embedded = self.dropout(self.positional_encoding(self.decoder_embedding(tgt)))
+        
+        src_embedded = self.positional_encoding(self.encoder_embedding(src))
+
+        tgt_embedded = self.decoder_embedding(tgt)
+        position_ids = torch.arange(tgt_embedded.shape[1], dtype=torch.long).unsqueeze(0).expand(tgt_embedded.shape[0], tgt_embedded.shape[1])
+        position_embeddings = self.positional_embedding(position_ids)
+        tgt_embedded = tgt_embedded + self.a * position_embeddings
+
+        enc_output = self.encoder_layer(src_embedded)
+        dec_output = self.decoder_layer(tgt_embedded, enc_output)
+        output = self.fc(torch.relu(dec_output))
+        #print("output of the transformer:", output.shape)
+        return output
+    
+    def get_cross_attention_weights(self):
+        return self.decoder_layer.cross_attn_weights
+    
+    def get_self_attention_weights(self):
+        return self.decoder_layer.decoder_attn_weights
