@@ -17,7 +17,7 @@ Protein contact maps offer valuable insights into the 3D structure and function 
 - **Notebooks (.ipynb)**: These interactive notebooks are used to demonstrate and test various transformer models in a live coding environment. Metropolis-Hastings notebook contains different comparisons of the traditional methods imported from **trad_methods.py** file as well as the algorithm for data generation process.
 
 ### Additional Notes:
-- It is advised to first look at Metropolis-Hastings notebook, then Simple transformer and finally at Cross-attention experiment file. The models and plotting functions are correspondingly improted from **trad_methods.py**,  **models.py** and **utils.py** files.
+- It is advised to first look at Metropolis-Hastings notebook, then Simple transformer and finally at Cross-attention experiment file. The transformer models and plotting functions are correspondingly improted from  **models.py** and **utils.py** files.
 - This structure should be maintained and updated regularly to reflect any changes in the project's organization.
 - It's advisable to add more descriptive text as needed to help new users or contributors understand the function of each component in the repository.
 - For more details please refer to the report.
