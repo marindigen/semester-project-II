@@ -20,3 +20,4 @@ Protein contact maps offer valuable insights into the 3D structure and function 
 - This structure should be maintained and updated regularly to reflect any changes in the project's organization.
 - It's advisable to add more descriptive text as needed to help new users or contributors understand the function of each component in the repository.
 
+For more details please refer to the report.
