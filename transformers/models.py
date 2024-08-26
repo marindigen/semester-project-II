@@ -9,6 +9,8 @@ import tqdm
 import random
 import torch.nn.functional as F
 from torch.utils.data import DataLoader, Dataset
+import sys
+sys.path.append('/Users/mariayuffa/semester-project-II')
 from utils import *
 
 

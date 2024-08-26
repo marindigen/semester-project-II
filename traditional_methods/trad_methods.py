@@ -9,6 +9,8 @@ import h5py
 from sklearn.metrics import mutual_info_score
 from numba.typed import List
 from numba import njit,prange,jit
+import sys
+sys.path.append('/Users/mariayuffa/semester-project-II')
 from utils import *
 
 # Calculate the covariance matrix and its inverse
