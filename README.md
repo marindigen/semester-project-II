@@ -20,4 +20,6 @@ Protein contact maps offer valuable insights into the 3D structure and function 
 - It is advised to first look at Metropolis-Hastings notebook, then Simple transformer and finally at Cross-attention experiment file. The transformer models and plotting functions are correspondingly improted from  **models.py** and **utils.py** files.
 - This structure should be maintained and updated regularly to reflect any changes in the project's organization.
 - It's advisable to add more descriptive text as needed to help new users or contributors understand the function of each component in the repository.
+- Directory files should be adapted for your convenience.
 - For more details please refer to the report.
+
